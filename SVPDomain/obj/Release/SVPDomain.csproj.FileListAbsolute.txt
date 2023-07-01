@@ -1,0 +1,4 @@
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPDomain\bin\Release\SVPDomain.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPDomain\bin\Release\SVPDomain.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPDomain\obj\Release\SVPDomain.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPDomain\obj\Release\SVPDomain.pdb

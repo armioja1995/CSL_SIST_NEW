@@ -1,0 +1,75 @@
+﻿@model IEnumerable<SVPDomain.Seccion>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="clearfix" style="margin-bottom: 1px;"></div>
+<div class="panel-group">
+    <ol class="breadcrumb alert-link" style="background-color:rgb(254, 254, 254);border-bottom: 1px solid black">
+        @*border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;*@
+        <li class="active">
+            <a href="/Home/Index" style="color:black"> <span class="glyphicon glyphicon-home"></span> Menú Principal</a>
+        </li>
+        <li style="color:dimgray">
+            </i><span class="fa fa-flag"></span> Secciones
+        </li>
+    </ol>
+</div>
+<div class="clearfix" style="margin-bottom: 1px;"></div>
+@if (TempData["UpdateSuccess"] != null)
+{
+    <div class="alert alert-success">@TempData["UpdateSuccess"]</div>
+}
+
+<div class="panel panel-default">
+    <form action="/Seccion/index" method="get" class="form-horizontal" style="padding-top: 13px; padding-left: 13px">
+        <div class="form-group">
+            <div class="col-md-3">
+                <input type="text" name="query" class="form-control" placeholder="Buscar" />
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <button class="btn btn-primary">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+                <a href="/Seccions/create" class="btn btn-success">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+<table class="table table-striped table-responsive  table-hover" style="border-style: initial; border-color: lightslategray; color:black">
+    <thead style="background-color: rgb(0, 255, 138);">
+        <tr>
+            <th>Sección</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NombreSeccion</td>
+                <td>
+                    <a href="/Seccions/Edit/@item.Id" class="btn btn-warning btn-xs">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                    @* <a href="/Sección/Delete/@item.Id" class="btn btn-danger btn-xs">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </a>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+    .table th {
+        text-align: center;
+    }
+
+    .table td {
+        text-align: center;
+    }
+</style>

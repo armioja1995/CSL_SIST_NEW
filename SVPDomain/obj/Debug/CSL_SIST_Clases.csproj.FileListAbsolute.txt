@@ -1,0 +1,6 @@
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\SVPDomain.dll
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\SVPDomain.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\CSL_SIST_Clases.csproj.AssemblyReference.cache
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\CSL_SIST_Clases.csproj.CoreCompileInputs.cache
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\SVPDomain.dll
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\SVPDomain.pdb

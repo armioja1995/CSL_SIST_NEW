@@ -1,0 +1,93 @@
+﻿@model SVPDomain.Visitante
+
+@{
+    Layout = null;
+}
+<div id="Imprimir">
+
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer">Visitante - @Model.Nombres,@Model.ApePat @Model.ApeMat </legend>
+    </div>
+
+    <div class="container panel-">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+                <form class="dl-horizontal col-md-offset-5">
+                    <dt>
+                        DNI:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Dni)
+                    </dd>
+
+                    <dt>
+                        Sexo:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Sexo)
+                    </dd>
+
+                    <dt>
+                        Edad:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Edad)
+                    </dd>
+
+                    <dt>
+                        Email:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+
+                    <dt>
+                        Celular:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Celular)
+                    </dd>
+
+                    <dt>
+                        Cargo:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Cargo)
+                    </dd>
+
+                    <dt>
+                        Institución:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Institución)
+                    </dd>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br />
+</div>
+<div class="container">
+    <div class="col-md-2 col-md-offset-4">
+        <a href="~/Visitante/index" class="btn btn-danger">
+            Cerrar
+        </a>
+    </div>
+    <div class="col-md-1">
+        <a href="~/Visitante/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+        </a>
+    </div>
+</div>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF()" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>

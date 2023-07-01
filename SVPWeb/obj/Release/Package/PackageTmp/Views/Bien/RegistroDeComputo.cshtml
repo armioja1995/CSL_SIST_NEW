@@ -1,0 +1,212 @@
+﻿@model SVPDomain.Bien
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="clearfix" style="margin-bottom: 1px;"></div>
+<div class="panel-group">
+    <ol class="breadcrumb alert-link" style="background-color:rgb(254, 254, 254);border-bottom: 1px solid black;">
+        @*border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;*@
+        <li class="active">
+            <a href="/Home/Index" style="color:black"> <span class="glyphicon glyphicon-home"></span> Menú Principal</a>
+        </li>
+        <li>
+            <a href="/Bien/Index" style="color:black"><span class="fa fa-shopping-cart"></span> Bienes</a>
+        </li>
+        <li style="color:dimgray">
+            </i><span class="glyphicon glyphicon-blackboard"></span> Registrar Bien Computo
+        </li>
+    </ol>
+</div>
+@using (Html.BeginForm("Create", "Bien", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="container" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel" style="background-color: rgba(116, 237, 80, 0.79);text-align:center">
+                        <h4>Registrar Nuevo Bien - Computo</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="form-group col-md-5 col-md-offset-1 col-sm-5 col-xs-12">
+                                <label class="control-label">Tipo de Producto:</label>
+                                <div>
+                                    <input type="text" name="TipodeProducto" class="form-control" value="Computo" readonly="true" />
+                                </div>
+
+                                <label class="control-label">Grupo:</label>
+                                <div>
+                                    <input type="text" name="Grupo" class="form-control" value="20001" readonly="true" />
+                                </div>
+
+                                <label class="control-label">Nombre:</label>
+                                <div>
+                                    <input type="text" name="Nombre" class="form-control" placeholder = "Ingrese Nombre de Bien Computo..." />
+                                    @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                                </div>
+
+                                <label class="control-label">Fecha de Ingreso:</label>
+                                <div class="input-group date">
+                                    <div>
+                                        <div class='input-group date' id='datetimepicker3' style="width: 340px">
+                                            @Html.EditorFor(model => model.FechadeIngreso, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese Fecha de Ingreso..." } })
+                                            @Html.ValidationMessageFor(model => model.FechadeIngreso, "", new { @class = "text-danger" })
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="control-label">Marca:</label>
+                                <div>
+                                    <input type="text" name="Marca" class="form-control" placeholder="Ingrese Marca..." />
+                                    @Html.ValidationMessageFor(model => model.Marca, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">Modelo:</label>
+                                <div>
+                                    <input type="text" name="Modelo" class="form-control" placeholder="Ingrese Modelo..." />
+                                    @Html.ValidationMessageFor(model => model.Modelo, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">Serie:</label>
+                                <div>
+                                    <input type="text" name="Serie" class="form-control" placeholder="Ingrese Serie..." />
+                                    @Html.ValidationMessageFor(model => model.Serie, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">Color:</label>
+                                <div>
+                                    <input type="text" name="Color" class="form-control" placeholder="Ingrese Color..." />
+                                    @Html.ValidationMessageFor(model => model.Color, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">Estado:</label>
+                                <div>
+                                    @Html.DropDownListFor(model => model.Estado, new SelectList(new List<Object>{
+                                            new {value = "", text = "Seleccionar..."},
+                                            new {value = "Nuevo", text = "Nuevo"},
+                                            new {value = "Bueno", text = "Bueno"},
+                                            new {value = "Regular", text = "Regular"},
+                                            new {value = "Malo", text = "Malo"}}, "value", "text", ""), htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessage("Estado", new { @class = "text-danger" })
+                                </div>
+
+                                <label class="control-label">Tipo de Obtención:</label>
+                                <div>
+                                    @Html.DropDownListFor(model => model.Tipo, new SelectList(new List<Object>{
+                                            new {value = "", text = "Seleccionar..."},
+                                            new {value = "Compra", text = "Compra"},
+                                            new {value = "Donación", text = "Donación"},
+                                            new {value = "Premio", text = "Premio"}}, "value", "text", ""), htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessage("Tipo", new { @class = "text-danger" })
+                                </div>
+
+                                <label class="control-label">Documento:</label>
+                                <div>
+                                    @Html.DropDownListFor(model => model.Tipo_Documento, new SelectList(new List<Object>{
+                                            new {value = "", text = "Seleccionar..."},
+                                            new {value = "Acta", text = "Acta"},
+                                            new {value = "Boleta", text = "Boleta"},
+                                            new {value = "Factura", text = "Factura"},
+                                            new {value = "Oficio", text = "Oficio"}}, "value", "text", ""), htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessage("Tipo_Documento", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">N° de Documento:</label>
+                                <div>
+                                    <input type="text" name="N_Documento" class="form-control" placeholder="Ingrese N° de Documento..." />
+                                    @Html.ValidationMessageFor(model => model.N_Documento, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">Unidad de Medida:</label>
+                                <div>
+                                    @Html.DropDownListFor(model => model.UnidadMedida, new SelectList(new List<Object>{
+                                            new {value = "", text = "Seleccionar..."},
+                                            new {value = "Unidad", text = "Unidad"},
+                                            new {value = "Millar", text = "Millar"},
+                                            new {value = "Ciento", text = "Ciento"}}, "value", "text", ""), htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessage("UnidadMedida", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group col-md-5 col-sm-5 col-xs-12">
+                                
+                                <label class="control-label">Cantidad:</label>
+                                <div>
+                                    <input type="text" name="Cantidad" class="form-control" placeholder="Cantidad" />
+                                    @Html.ValidationMessageFor(model => model.Cantidad, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">Costo:</label>
+                                <div>
+                                    <input type="text" name="Costo" class="form-control" placeholder="S/.  00.00" />
+                                    @Html.ValidationMessageFor(model => model.Costo, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">Fungible:</label>
+                                <div>
+                                    @Html.EditorFor(model => model.Fungible, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Fungible, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">Ambiente:</label>
+                                <div>
+                                    @Html.DropDownListFor(model => model.IdAmbiente, new SelectList(ViewBag.IdAmbiente, "IdAmbiente", "Nombre"), "[Selecionar...]", htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.IdAmbiente, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="clearfix" style="margin-bottom: 15px;"></div>
+                                <label class="control-label">Sede:</label>
+                                <div>
+                                    @Html.DropDownListFor(model => model.IdSede, new SelectList(ViewBag.IdSede, "IdSede", "NombreSede"), "[Selecionar...]", htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.IdSede, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="clearfix" style="margin-bottom: 15px;"></div>
+                                <label class="control-label">Proveedor:</label>
+                                <div>
+                                    @Html.DropDownListFor(model => model.IdProveedor, new SelectList(ViewBag.IdProveedor, "IdProveedor", "Nombre"), "[Selecionar...]", htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.IdProveedor, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">De Baja:</label>
+                                <div>
+                                    @Html.EditorFor(model => model.DeBaja, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.DeBaja, "", new { @class = "text-danger" })
+                                </div>
+                                <label class="control-label">Observaciones:</label>
+                                <div>
+                                    @Html.TextAreaFor(model => model.Observaciones, new { @class = "form-control", @rows = 5, @cols = 220 ,@placeholder = "Ingrese Descripción del Bien Computo...", @maxlength = "500" })
+                                    @Html.ValidationMessageFor(model => model.Observaciones, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="clearfix" style="margin-bottom: 12px;"></div>
+                                <label class="control-label">Foto:</label>
+                                <div>
+                                    <span class="btn btn-default btn-file">
+                                        @Html.TextBoxFor(modelo => modelo.FotoFile, new { type = "file" })
+                                    </span>
+                                </div>
+                                <div class="clearfix" style="margin-bottom: 15px;"></div>
+                                <label class="control-label">Fecha de Desuso</label>
+                                <div class="input-group date">
+                                    <div>
+                                        <div class='input-group date' id='datetimepicker2' style="width: 340px">
+                                            @Html.EditorFor(model => model.FechaVencimiento, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese Fecha Estimada de Desuso..." } })
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container col-md-12 col-sm-6 col-xs-12">
+                            <div class="col-md-2 col-md-offset-4 col-sm-4 col-xs-12">
+                                <a href="~/Bien/index" class="btn btn-warning">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Volver
+                                </a>
+                            </div>
+                            <div class="col-md-1 col-sm-4 col-xs-12">
+                                <button type="submit" class="btn btn-success" aria-hidden="true">
+                                    <span class="glyphicon glyphicon-ok"></span> Crear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

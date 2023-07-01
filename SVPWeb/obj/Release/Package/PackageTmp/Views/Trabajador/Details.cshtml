@@ -1,0 +1,171 @@
+﻿@model SVPDomain.Trabajador
+
+@{
+    Layout = null;
+}
+<div id="Imprimir">
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer">
+            Información - @Model.Nombres,@Model.ApePat @Model.ApeMat - @Model.Id
+        </legend>
+    </div>
+    <div class="container panel-">
+        <div class="row">
+            <div class="col-md-10">
+                <form class="dl-horizontal">
+                    <br /><br />
+                    <div class="form-group col-md-5 col-md-offset-1">
+                        <dt>
+                            Dni:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Dni)
+                        </dd>
+                        <dt>
+                            Sexo
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Sexo)
+                        </dd>
+                        <dt>
+                            F. Nacimiento:
+                        </dt>
+                        <dd>
+                            @Model.FechaNac.ToShortDateString()
+                        </dd>
+                        <dt>
+                            Edad:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Edad)
+                        </dd>
+                        <dt>
+                            Email:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+                        <dt>
+                            Dirección:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Direccion)
+                        </dd>
+                        <dt>
+                            Telefono:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.TelefFijo)
+                        </dd>
+                        <dt>
+                            Celular:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Movil)
+                        </dd>
+                        <dt>
+                            Especialidad:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Especialidad)
+                        </dd>
+                        <dt>
+                            Cargo:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Cargo.NombreCargo)
+                        </dd>
+                        <dt>
+                            Condición:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Condición)
+                        </dd>
+                        <dt>
+                            Inicio Contrato:
+                        </dt>
+                        <dd>
+                            @Model.FechaIContrato.ToShortDateString()
+                        </dd>
+                        <dt>
+                            Fin Contrato:
+                        </dt>
+                        <dd>
+                            @Model.FechaFContrato.ToShortDateString()
+                        </dd>
+                        <dt>
+                            Estado:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Estado)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Curriculo)
+                        </dt>
+                        <dd>
+                            @if (!string.IsNullOrEmpty(Model.Curriculo))
+                            {
+                                <a href="@Url.Content(Model.Curriculo)" download="@Model.Curriculo">
+                                    CV-@Model.NombreCompleto
+                                    <span class="glyphicon glyphicon-download-alt"></span>
+                                </a>
+                            }
+                        </dd>
+                        <br />
+                    </div>
+                    <div class="form-group col-md-5">
+
+                        <dd>
+                            @if (!string.IsNullOrEmpty(Model.Foto))
+                            {
+                                <p>
+                                    <a href="@Url.Content(Model.Foto)" download="@Model.Foto">
+                                        <img src="@Url.Content(Model.Foto)" alt="Image" width="200" height="155" class="img-rounded" />
+                                        <span class="glyphicon glyphicon-download-alt" data-toggle="tooltip" data-placement="bottom" title="Descargar Foto"></span>
+                                    </a>
+                                </p>
+                            }
+                        </dd>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.CódQR)
+                            <p>
+                                <a href="/Trabajador/BarcodeImage?barcodeText=@Model.Dni.ToString()" download="/Trabajador/BarcodeImage?barcodeText=@Model.Dni.ToString()">
+                                    <img id="foto" src="/Trabajador/BarcodeImage?barcodeText=@Model.Dni.ToString()" width="200" height="200" />
+                                    <span class="glyphicon glyphicon-download-alt" data-toggle="tooltip" data-placement="bottom" title="Descargar QR"></span>
+                                </a>
+                            </p>
+                        </dd>
+                    </div>
+                </form>
+            </div>
+            <div class="container col-md-offset-1">
+                <div class="col-ms-6">
+                    <a href="~/Trabajador/index" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Cerrar.">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="col-ms-6">
+                    <a href="~/Trabajador/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Editar!">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    </a>
+                </div>
+                @*<div class="col-md-2 col-md-offset-3">
+                        <a href="~/Trabajador/index" class="btn btn-info">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Volver
+                        </a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="~/Trabajador/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+                        </a>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF(Imprimir)" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>

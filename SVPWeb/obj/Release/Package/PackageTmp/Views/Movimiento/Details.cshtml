@@ -1,0 +1,75 @@
+﻿@model SVPDomain.Movimiento
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Movimiento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ambiente.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ambiente.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bien.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bien.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sede.NombreSede)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sede.NombreSede)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trabajador.Dni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trabajador.Dni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaMovimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaMovimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdMovimiento }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

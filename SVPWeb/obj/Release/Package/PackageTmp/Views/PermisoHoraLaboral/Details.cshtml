@@ -1,0 +1,84 @@
+﻿@model SVPDomain.PermisoHoraLaboral
+
+
+@{
+    Layout = null;
+}
+<div id="Imprimir">
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer">Información - @Model.Trabajador.Nombres,@Model.Trabajador.ApePat @Model.Trabajador.ApeMat - @Model.Trabajador.IdCargo </legend>
+    </div>
+
+    <div class="container panel-">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-2">
+                <form class="dl-horizontal col-md-offset-4">
+                    <div class="col-md-2 col-md-offset-4">
+                        @if (!string.IsNullOrEmpty(Model.Trabajador.Foto))
+                        {
+                            <p>
+                                <img src="@Url.Content(Model.Trabajador.Foto)" alt="Image" width="110" height="100" class="img-circle" />
+                            </p>
+                        }
+                    </div>
+                    <br /><br /><br /><br /><br /><br />
+                    <dt>
+                        Fecha de Permiso:
+                    </dt>
+
+                    <dd>
+                        @Model.FechadeEjecución.ToShortDateString()
+                    </dd>
+
+                    <dt>
+                        Hora de Salida:
+                    </dt>
+
+                    <dd>
+                        @Model.HoraSalida.ToShortTimeString()
+                    </dd>
+
+                    <dt>
+                        Hora de Retorno:
+                    </dt>
+
+                    <dd>
+                        @Model.HoraRetorno.ToShortTimeString()
+                    </dd>
+                    <dt>
+                        Destino:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Destino)
+                    </dd>
+                    <dt>
+                        Motivo:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Motivo)
+                    </dd>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br />
+</div>
+<div class="container">
+    <div class="col-md-2 col-md-offset-4">
+        <a href="~/PermisoHoraLaboral/index" class="btn btn-danger">
+            Cerrar
+        </a>
+    </div>
+    <div class="col-md-1">
+        <a href="~/PermisoHoraLaboral/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+        </a>
+    </div>
+</div>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF()" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>

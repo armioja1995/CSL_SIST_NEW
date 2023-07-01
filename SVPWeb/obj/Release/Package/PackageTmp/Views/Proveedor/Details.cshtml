@@ -1,0 +1,113 @@
+﻿@model SVPDomain.Proveedor
+@{
+    Layout = null;
+}
+
+<div id="Imprimir">
+
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer">Proveedor - @Model.Nombre - @Model.Ruc</legend>
+    </div>
+
+    <div class="container panel-">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+                <form class="dl-horizontal col-md-offset-5">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Ruc)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Ruc)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Nombre)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Nombre)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Direccion)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Direccion)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Telefono)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Telefono)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Celular)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Celular)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Representante)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Representante)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Correo)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Correo)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Pais)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Pais)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Ciudad)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Ciudad)
+                        </dd>
+
+                    </dl>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<br />
+</div>
+<div class="container">
+    <div class="col-md-2 col-md-offset-4">
+        <a href="~/Proveedor/index" class="btn btn-danger">
+            Cerrar
+        </a>
+    </div>
+    <div class="col-md-1">
+        <a href="~/Proveedor/Edit/@Html.DisplayFor(model => model.IdProveedor)" class="btn btn-warning">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+        </a>
+    </div>
+</div>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF()" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>

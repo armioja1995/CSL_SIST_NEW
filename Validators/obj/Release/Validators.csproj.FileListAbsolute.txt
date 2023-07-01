@@ -1,0 +1,16 @@
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\Validators.dll.config
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\Validators.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\Validators.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\EntityFramework.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\Interfaces.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\SVPDomain.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\SVPRepository.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\Interfaces.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\SVPDomain.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\SVPRepository.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\EntityFramework.xml
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\obj\Release\Validators.csprojResolveAssemblyReference.cache
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\obj\Release\Validators.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Validators\obj\Release\Validators.pdb

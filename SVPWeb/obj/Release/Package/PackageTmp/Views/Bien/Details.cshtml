@@ -1,0 +1,221 @@
+﻿@model SVPDomain.Bien
+
+@{
+    Layout = null;
+}
+
+<div id="Imprimir">
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer">Información - Bien - @Model.Nombre </legend>
+    </div>
+    <div class="container panel-">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <form class="dl-horizontal">
+                    <div class="form-group col-md-5">
+                        <dt>
+                            Tipo de Producto:
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.TipodeProducto)
+                        </dd>
+                        <dt>
+                            Código
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.CodigoGrupo)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Sede)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Sede.NombreSede)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Ambiente)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Ambiente.Nombre)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Proveedor)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Proveedor.Nombre)
+                        </dd>
+                        <dt>
+                            Fecha de Ingreso
+                        </dt>
+
+                        <dd>
+                            @Model.FechadeIngreso.ToShortDateString()
+                        </dd>
+                        
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Marca)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Marca)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Modelo)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Modelo)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Serie)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Serie)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Color)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Color)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Estado)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Estado)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Tipo)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Tipo)
+                        </dd>
+
+                        <dt>
+                            Tipo de Documento:
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Tipo_Documento)
+                        </dd>
+
+                        <dt>
+                            N° de Documento:
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.N_Documento)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Dimensiones)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Dimensiones)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.UnidadMedida)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.UnidadMedida)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Cantidad)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Cantidad)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Costo)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Costo)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Perecible)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Perecible)
+                        </dd>
+
+                        <dt>
+                            Fecha de Desuso:
+                        </dt>
+
+                        <dd>
+                            @Model.FechaVencimiento.ToShortDateString()
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Fungible)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Fungible)
+                        </dd>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <dt>
+                            Observaciones
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Observaciones)
+                        </dd>
+                        <br /><br />
+                        <dd>
+                            @if (!string.IsNullOrEmpty(Model.Foto))
+                            {
+                                <p>
+                                    <a href="@Url.Content(Model.Foto)" download="@Model.Foto">
+                                        <img src="@Url.Content(Model.Foto)" alt="Image" width="175" height="155" class="img-circle" />
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
+                            }
+                        </dd>
+                    </div>
+                </form>
+            </div>
+            <div class="container col-md-offset-1">
+                <div class="col-ms-6">
+                    <a href="~/Bien/index" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="col-ms-6">
+                    <a href="~/Bien/Edit/@Html.DisplayFor(model => model.IdBien)" class="btn btn-warning">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF()" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>

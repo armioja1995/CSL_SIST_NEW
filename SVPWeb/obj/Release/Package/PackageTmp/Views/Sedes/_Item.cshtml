@@ -1,0 +1,19 @@
+﻿@model List<SVPDomain.Ambiente>
+
+@foreach (var item in Model)
+{
+    <tr>
+
+        <td>@item.IdAmbiente</td>
+        <td>@item.Nombre</td>
+        <td>@item.Descripcion</td>
+        <td class="col-sm-1">
+            <input type="hidden" class="form-control input-sm" name="DetallesSedes[@ViewBag.Ambiente].IdAmbiente" value="@item.IdAmbiente">
+        </td>
+        <td style="text-align: center">
+            <a class="btn btn-danger btn-xs" onclick="deleteRow(this)">
+                <span class="glyphicon glyphicon-minus"></span>
+            </a>
+        </td>
+    </tr>
+}

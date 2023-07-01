@@ -1,0 +1,75 @@
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\obj\Debug\SVPRepository.csprojResolveAssemblyReference.cache
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\bin\Debug\SVPRepository.dll.config
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\bin\Debug\SVPRepository.dll
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\bin\Debug\SVPRepository.pdb
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\bin\Debug\EntityFramework.dll
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\bin\Debug\SVPDomain.dll
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\bin\Debug\SVPDomain.pdb
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\bin\Debug\EntityFramework.xml
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\obj\Debug\SVPRepository.dll
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\obj\Debug\SVPRepository.pdb
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\obj\Debug\SVPRepository.Migrations.InitDatabase.resources
+D:\Universidad\proyectos VisualStudio\SanVP\SVPRepository\obj\Debug\SVPRepository.csproj.GenerateResource.Cache
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\SVPRepository.dll.config
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\SVPRepository.dll
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\SVPRepository.pdb
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\EntityFramework.dll
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\Interfaces.dll
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\SVPDomain.dll
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\Interfaces.pdb
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\SVPDomain.pdb
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\EntityFramework.xml
+C:\Users\armio\Desktop\SanVP\SVPRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\armio\Desktop\SanVP\SVPRepository\obj\Debug\SVPRepository.csprojResolveAssemblyReference.cache
+C:\Users\armio\Desktop\SanVP\SVPRepository\obj\Debug\SVPRepository.dll
+C:\Users\armio\Desktop\SanVP\SVPRepository\obj\Debug\SVPRepository.pdb
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPRepository.dll.config
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPRepository.dll
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPRepository.pdb
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.dll
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\Interfaces.dll
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPDomain.dll
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\Interfaces.pdb
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPDomain.pdb
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.xml
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.csprojResolveAssemblyReference.cache
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.dll
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.pdb
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.Migrations.InitDatabase.resources
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.csproj.GenerateResource.Cache
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.Migrations.initDtabase.resources
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPRepository.dll.config
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPRepository.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPRepository.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\Interfaces.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPDomain.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\Interfaces.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPDomain.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.xml
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.csprojResolveAssemblyReference.cache
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.pdb
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPRepository.dll.config
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPRepository.dll
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPRepository.pdb
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.dll
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.SqlServer.dll
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\Interfaces.dll
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPDomain.dll
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\Interfaces.pdb
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\SVPDomain.pdb
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.xml
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\bin\Debug\EntityFramework.SqlServer.xml
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.csproj.AssemblyReference.cache
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.csproj.CoreCompileInputs.cache
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.csproj.CopyComplete
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.dll
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPRepository\obj\Debug\SVPRepository.pdb

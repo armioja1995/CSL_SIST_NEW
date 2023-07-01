@@ -1,0 +1,43 @@
+﻿@model SVPDomain.Cargo
+
+@{
+    Layout = null;
+}
+
+<div class="col-md-12">
+    <legend class="panel-footer">Grado</legend>
+</div>
+<div class="container panel-">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+            <form class="dl-horizontal col-md-offset-5">
+                <dt>
+                    Nombre:
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.NombreCargo)
+                </dd>
+                <dt>
+                    Descripción:
+                </dt>
+                <td>
+                    <div class="col-md-offset-1">
+                        @Html.DisplayFor(model => model.Descripcion)
+                    </div>
+                </td>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="col-md-2 col-md-offset-4">
+        <a href="~/Cargo/index" class="btn btn-danger">
+            Cerrar
+        </a>
+    </div>
+    <div class="col-md-1">
+        <a href="~/Cargo/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+        </a>
+    </div>
+</div>

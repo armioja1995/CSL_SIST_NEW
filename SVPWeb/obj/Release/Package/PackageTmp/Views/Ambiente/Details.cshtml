@@ -1,0 +1,67 @@
+﻿@model SVPDomain.Ambiente
+
+@{
+    Layout = null;
+}
+
+<div id="Imprimir">
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer">Información - Ambiente </legend>
+    </div>
+    <div class="container panel-">
+        <div class="row">
+            <div class="col-md-10 ">
+                <form class="dl-horizontal">
+                    <div class="form-group col-md-5">
+                        <br /><br />
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Nombre)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Nombre)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Descripcion)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Descripcion)
+                        </dd>
+                    </div>
+                    <div class="form-group col-md-5">
+
+                        <dd>
+                            @if (!string.IsNullOrEmpty(Model.Foto))
+                            {
+                                <p>
+                                    <a href="@Url.Content(Model.Foto)" download="@Model.Foto">
+                                        <img src="@Url.Content(Model.Foto)" alt="Image" width="200" height="auto" class="img-rounded" />
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
+                            }
+                        </dd>
+                    </div>
+                </form>
+            </div>
+            <div class="container col-md-offset-1">
+                <div class="col-ms-6">
+                    <a href="~/Ambiente/index" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="col-ms-6">
+                    <a href="~/Ambiente/Edit/@Html.DisplayFor(model => model.IdAmbiente)" class="btn btn-warning">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF()" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>

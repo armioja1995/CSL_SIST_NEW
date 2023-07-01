@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="javascript:document.getElementById('logoutForm').submit()">
+                <span class="glyphicon glyphicon-off"></span>
+            </a>
+        </li> 
+        <li>
+            @Html.ActionLink("Bienvenido " + User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+        </li>
+    </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        @*<a href="@Url.Action("Login", "Account")"><span class="glyphicon glyphicon-user" aria-hidden="true">Iniciar</span></a>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink(" Iniciar", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class ="glyphicon glyphicon-log-in"})
+            </li>
+        </ul>
+        @*<li>@Html.ActionLink("Registrar", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+
+    </ul>
+}
+<style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+</style>

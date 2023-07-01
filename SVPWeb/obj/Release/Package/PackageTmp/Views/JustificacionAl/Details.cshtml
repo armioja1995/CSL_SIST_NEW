@@ -1,0 +1,120 @@
+﻿@model SVPDomain.JustificacionAl
+
+@{
+    Layout = null;
+}
+
+<div class="col-md-12 col-md-offset-0">
+    <legend class="panel-footer">Información - @Model.Apoderado.Nombres,@Model.Apoderado.ApePat @Model.Apoderado.ApeMat - @Model.IdApoderado   </legend>
+</div>
+
+<div class="container panel-">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+            <form class="dl-horizontal col-md-offset-5">
+                <div class="col-md-2 col-md-offset-5">
+                    @if (!string.IsNullOrEmpty(Model.Alumno.Foto))
+                    {
+                        <p>
+                            <img src="@Url.Content(Model.Alumno.Foto)" alt="Image" width="110" height="100" class="img-circle" />
+                        </p>
+                    }
+                </div>
+                <br /><br /><br /><br /><br /><br />
+                <dt>
+                    Alumno:
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Alumno.NombreCompleto)
+                </dd>
+                <dt>
+                    Grado:
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Alumno.Grado.NombreGrado)
+                </dd>
+                <dt>
+                    Sección:
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Alumno.Seccion.NombreSeccion)
+                </dd>
+                <dt>
+                    Realizado:
+                </dt>
+
+                <dd>
+                    @Model.FechaJustificacion.ToShortDateString()
+                </dd>
+
+                <dt>
+                    Incidencia:
+                </dt>
+
+                <dd>
+                    @Model.FechaIncidencia.ToShortDateString()
+                </dd>
+                <dt>
+                    Tipo:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Tipo)
+                </dd>
+
+                <dt>
+                    Motivo:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Motivo)
+                </dd>
+
+                <dt>
+                    Documento:
+                </dt>
+
+                <dd>
+                    @if (!string.IsNullOrEmpty(Model.Documento))
+                    {
+                        <a href="@Url.Content(Model.Documento)" download="@Model.Documento">
+                            Justificación-@Model.Apoderado.NombreCompleto <span class="glyphicon glyphicon-download-alt"></span>
+                        </a>
+                    }
+                </dd>
+                <dt>
+                    DNI Realizante:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DNI_Realizante)
+                </dd>
+                <dt>
+                    Nombre Realizante:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Nombres_Realizante)
+                </dd>
+            </form>
+        </div>
+    </div>
+</div>
+<br />
+<div class="container">
+    <div class="col-md-2 col-md-offset-4">
+        <a href="~/JustificacionAl/index" class="btn btn-danger">
+            Cerrar
+        </a>
+    </div>
+    <div class="col-md-1">
+        <a href="~/JustificacionAl/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+        </a>
+    </div>
+</div>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF()" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>

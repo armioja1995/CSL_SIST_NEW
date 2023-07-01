@@ -1,0 +1,146 @@
+﻿@model SVPDomain.Alumno
+
+@{
+    Layout = null;
+}
+<div id="Imprimir">
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer" >Información - @Model.Nombres,@Model.ApePat @Model.ApeMat - @Model.Id </legend>
+    </div>
+    <div class="container panel-">
+        <div class="row">
+            <div class="col-md-10">
+                <form class="dl-horizontal">
+                    <div class="form-group col-md-5 col-md-offset-1">
+                        <br /><br />
+                        <dt>
+                            Dni:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Dni)
+                        </dd>
+                        <dt>
+                            Sexo:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Sexo)
+                        </dd>
+                        <dt>
+                            F. Nacimiento:
+                        </dt>
+                        <dd>
+                            @Model.FechaNac.ToShortDateString()
+                        </dd>
+                        <dt>
+                            Edad:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Edad)
+                        </dd>
+                        <dt>
+                            Email:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+                        <dt>
+                            Dirección:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Direccion)
+                        </dd>
+                        <dt>
+                            Telefono:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Telefono)
+                        </dd>
+                        <dt>
+                            Grado:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.IdGrado)
+                        </dd>
+                        <dt>
+                            Sección:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Seccion.NombreSeccion)
+                        </dd>
+                        <dt>
+                            Estado:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Estado)
+                        </dd>
+                        <dt>
+                            DNI Mamá:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.DNI_Mama)
+                        </dd>
+                        <dt>
+                            Nombre Mamá:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.NombreCompletoMama)
+                        </dd>
+                        <dt>
+                            DNI Papá:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.DNI_Papa)
+                        </dd>
+                        <dt>
+                            Nombre Papá:
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.NombreCompletoPapa)
+                        </dd>
+                    </div>
+                    <div class="form-group col-md-5">
+
+                        <dd>
+                            @if (!string.IsNullOrEmpty(Model.Foto))
+                            {
+                                <p>
+                                    <a href="@Url.Content(Model.Foto)" download="@Model.Foto">
+                                        <img src="@Url.Content(Model.Foto)" alt="Image" width="200" height="155" class="img-rounded" />
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
+                            }
+                        </dd>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.CódQR)
+                            <p>
+                                <a href="/Alumno/BarcodeImage?barcodeText=@Model.Dni.ToString()" download="/Alumno/BarcodeImage?barcodeText=@Model.Dni.ToString()">
+                                    <img id="foto" src="/Alumno/BarcodeImage?barcodeText=@Model.Dni.ToString()"  width="200" height="200" />
+                                    <span class="glyphicon glyphicon-download-alt"></span>
+                                </a>
+                            </p>
+                        </dd>
+                    </div>
+                </form>
+            </div>
+            <div class="container col-md-offset-1">
+                <div class="col-ms-6">
+                    <a href="~/Alumno/index" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="col-ms-6">
+                    <a href="~/Alumno/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF()" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>

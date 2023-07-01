@@ -1,0 +1,7 @@
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Interfaces\bin\Release\Interfaces.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Interfaces\bin\Release\Interfaces.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Interfaces\bin\Release\SVPDomain.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Interfaces\bin\Release\SVPDomain.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Interfaces\obj\Release\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Interfaces\obj\Release\Interfaces.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\Interfaces\obj\Release\Interfaces.pdb

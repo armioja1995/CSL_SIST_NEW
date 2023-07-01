@@ -1,0 +1,125 @@
+﻿@model SVPDomain.Proveedor
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="clearfix" style="margin-bottom: 1px;"></div>
+<div class="panel-group">
+    <ol class="breadcrumb alert-link" style="background-color:rgb(254, 254, 254);border-bottom: 1px solid black;">
+        @*border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;*@
+        <li class="active">
+            <a href="/Home/Index" style="color:black"> <span class="glyphicon glyphicon-home"></span> Menú Principal</a>
+        </li>
+        <li>
+            <a href="/Proveedor/Index" style="color:black"><span class="fa fa-truck"></span> Proveedores</a>
+        </li>
+        <li style="color:dimgray">
+            </i><span class="glyphicon glyphicon-plus"></span> Registrar Proveedor
+        </li>
+    </ol>
+</div>
+@using (Html.BeginForm("Create", "Proveedor", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="container" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel" style="background-color: rgba(116, 237, 80, 0.79);text-align:center">
+                        <h4>Registrar Proveedor</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group col-md-12 col-md-offset-2">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Ruc :</label>
+                                <div class="col-md-5">
+                                    <input type="number" id="Ruc" name="Ruc" required="required" class="form-control col-md-7 col-xs-12"placeholder = "Ingrese RUC..." maxlength = "11">
+                                    @Html.ValidationMessageFor(model => model.Ruc, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 10px;"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Razón Social :</label>
+                                <div class="col-md-5">
+                                    @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese Razón Social...", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 10px;"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Teléfono :</label>
+                                <div class="col-md-5">
+                                    @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese Teléfono de la Empresa...", @maxlength = "9", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 10px;"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Representante:</label>
+                                <div class="col-md-5">
+                                    @Html.EditorFor(model => model.Representante, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese Representante...", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.Representante, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 10px;"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Celular :</label>
+                                <div class="col-md-5">
+                                    @Html.EditorFor(model => model.Celular, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese Celular del Representante...", @maxlength = "9", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.Celular, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 10px;"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">E-mail :</label>
+                                <div class="col-md-5">
+                                    <input type="email" id="email" name="Correo" required="required" class="form-control col-md-7 col-xs-12" placeholder="Ingrese Correo">
+                                    @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 10px;"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Dirección :</label>
+                                <div class="col-md-5">
+                                    @Html.EditorFor(model => model.Direccion, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese Dirección...", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.Direccion, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 10px;"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">País :</label>
+                                <div class="col-md-5">
+                                    @Html.EditorFor(model => model.Pais, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese País...", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.Pais, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="clearfix" style="margin-bottom: 10px;"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Ciudad :</label>
+                                <div class="col-md-5">
+                                    @Html.EditorFor(model => model.Ciudad, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese Ciudad...", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.Ciudad, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="container">
+                        <div class="col-md-2 col-md-offset-4">
+                            <a href="~/Proveedor/index" class="btn btn-warning">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Volver
+                            </a>
+                        </div>
+                        <div class="col-md-1">
+                            <button type="submit" class="btn btn-success" aria-hidden="true">
+                                <span class="glyphicon glyphicon-ok"></span> Crear
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

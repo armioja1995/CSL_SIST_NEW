@@ -1,0 +1,35 @@
+﻿@model SVPDomain.Grado
+
+@{
+    Layout = null;
+}
+
+<div class="col-md-12 col-md-offset-0">
+    <legend class="panel-footer">Grado</legend>
+</div>
+<div class="container panel-">
+    <div class="row">
+        <div class="col-md-2 col-md-offset-3">
+            <form class="dl-horizontal">
+                <dt>
+                    Nombre:
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.NombreGrado)
+                </dd>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="col-md-2 col-md-offset-3">
+        <a href="~/grado/index" class="btn btn-danger">
+            Cerrar
+        </a>
+    </div>
+    <div class="col-md-1">
+        <a href="~/grado/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+        </a>
+    </div>
+</div>

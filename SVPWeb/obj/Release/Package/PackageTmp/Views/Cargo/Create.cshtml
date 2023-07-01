@@ -1,0 +1,71 @@
+﻿@model SVPDomain.Cargo
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="clearfix" style="margin-bottom: 1px;"></div>
+<div class="panel-group">
+    <ol class="breadcrumb alert-link" style="background-color:rgb(254, 254, 254);border-bottom: 1px solid black;">
+        @*border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;*@
+        <li class="active">
+            <a href="/Home/Index" style="color:black"> <span class="glyphicon glyphicon-home"></span> Menú Principal</a>
+        </li>
+        <li>
+            <a href="/Cargo/Index" style="color:black"><span class="glyphicon glyphicon-asterisk"></span>Cargos</a>
+        </li>
+        <li style="color:dimgray">
+            </i><span class="glyphicon glyphicon-plus"></span>Registrar Cargo
+        </li>
+    </ol>
+</div>
+
+@using (Html.BeginForm("Create", "Cargo", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="container" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel" style="background-color: rgba(116, 237, 80, 0.79);text-align:center">
+                        <h4>Registrar Trabajador</h4>
+                    </div>
+                    <div class="panel-body">
+
+                        <div class="form-group col-md-12 col-md-offset-2">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Nombre :</label>
+                                <div class="col-sm-4">
+                                    @Html.EditorFor(model => model.NombreCargo, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese Nombre de Cargo..." } })
+                                    @Html.ValidationMessageFor(model => model.NombreCargo, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Descripcion :</label>
+                                <div class="col-lg-4 col-md-4">
+                                    @Html.TextAreaFor(model => model.Descripcion, new { @class = "form-control", @rows = 5, @cols = 220, @placeholder = "Ingrese Descripción del Cargo...", @maxlength = "500" })
+                                    @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="container">
+                        <div class="col-md-2 col-md-offset-4">
+                            <a href="~/Cargo/index" class="btn btn-warning">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Volver
+                            </a>
+                        </div>
+                        <div class="col-md-1">
+                            <button type="submit" class="btn btn-success" aria-hidden="true">
+                                <span class="glyphicon glyphicon-ok"></span> Crear
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

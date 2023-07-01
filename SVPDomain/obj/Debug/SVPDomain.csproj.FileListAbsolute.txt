@@ -1,0 +1,26 @@
+D:\Universidad\proyectos VisualStudio\SanVP\SVPDomain\bin\Debug\SVPDomain.dll
+D:\Universidad\proyectos VisualStudio\SanVP\SVPDomain\bin\Debug\SVPDomain.pdb
+D:\Universidad\proyectos VisualStudio\SanVP\SVPDomain\obj\Debug\SVPDomain.csprojResolveAssemblyReference.cache
+D:\Universidad\proyectos VisualStudio\SanVP\SVPDomain\obj\Debug\SVPDomain.dll
+D:\Universidad\proyectos VisualStudio\SanVP\SVPDomain\obj\Debug\SVPDomain.pdb
+C:\Users\armio\Desktop\SanVP\SVPDomain\bin\Debug\SVPDomain.dll
+C:\Users\armio\Desktop\SanVP\SVPDomain\bin\Debug\SVPDomain.pdb
+C:\Users\armio\Desktop\SanVP\SVPDomain\obj\Debug\SVPDomain.csprojResolveAssemblyReference.cache
+C:\Users\armio\Desktop\SanVP\SVPDomain\obj\Debug\SVPDomain.dll
+C:\Users\armio\Desktop\SanVP\SVPDomain\obj\Debug\SVPDomain.pdb
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPDomain\bin\Debug\SVPDomain.dll
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPDomain\bin\Debug\SVPDomain.pdb
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.csprojResolveAssemblyReference.cache
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.dll
+C:\Users\limay\Desktop\SanVicente\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPDomain\bin\Debug\SVPDomain.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPDomain\bin\Debug\SVPDomain.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.csprojResolveAssemblyReference.cache
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.pdb
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPDomain\bin\Debug\SVPDomain.dll
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPDomain\bin\Debug\SVPDomain.pdb
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.csproj.AssemblyReference.cache
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.csproj.CoreCompileInputs.cache
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.dll
+D:\WORK\DESARROLLO\colegio-otuzco-svp\SVPDomain\obj\Debug\SVPDomain.pdb

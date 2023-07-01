@@ -1,0 +1,102 @@
+﻿@model SVPDomain.VisitaVisitante
+
+@{
+    Layout = null;
+}
+<div id="Imprimir">
+
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer">Visitante - @Model.Visitante.NombreCompleto</legend>
+    </div>
+
+    <div class="container panel-">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+                <form class="dl-horizontal col-md-offset-5">
+                    <dt>
+                        DNI:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Visitante.Dni)
+                    </dd>
+                    <dt>
+                        Edad:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Visitante.Edad)
+                    </dd>
+                    <dt>
+                        Celular:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Visitante.Celular)
+                    </dd>
+
+                    <dt>
+                        Dirección:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Visitante.Direccion)
+                    </dd>
+                    <dt>
+                        Correo:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Visitante.Email)
+                    </dd>
+                    <dt>
+                        Fecha:
+                    </dt>
+
+                    <dd>
+                        @Model.Fecha.ToShortDateString()
+                    </dd>
+                    <dt>
+                        Hora Entrada:
+                    </dt>
+
+                    <dd>
+                        @Model.FechaEntrada.ToShortTimeString()
+                    </dd>
+                    <dt>
+                        Hora Salida:
+                    </dt>
+
+                    <dd>
+                        @Model.FechaSalida.ToShortTimeString()
+                    </dd>
+                    <dt>
+                        Motivo:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Motivo)
+                    </dd>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br />
+</div>
+<div class="container">
+    <div class="col-md-2 col-md-offset-4">
+        <a href="~/VisitaVisitante/index" class="btn btn-danger">
+            Cerrar
+        </a>
+    </div>
+    <div class="col-md-1">
+        <a href="~/VisitaVisitante/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+        </a>
+    </div>
+</div>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF()" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>

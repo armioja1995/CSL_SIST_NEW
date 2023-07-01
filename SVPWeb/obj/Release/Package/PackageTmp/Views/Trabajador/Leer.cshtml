@@ -1,0 +1,49 @@
+﻿@model SVPDomain.Trabajador
+
+@{
+    ViewBag.Title = "Leer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-12 col-md-offset-0">
+    <legend class="panel-primary">Control Asistencia</legend>
+</div>
+@using (Html.BeginForm("Leer", "Trabajador", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div>
+        <div class="container">
+            <p>
+                Datos del Código QR:
+                <fieldset disabled>
+                    <input id="txtCodigo" style="width: 400px">
+                </fieldset>
+            </p>
+            <div id="reader" style="width: 300px; height: 250px"></div>
+        </div>
+
+        <div class="col-md-2 col-md-offset-3">
+            <a href="/Trabajador/index" class="btn btn-primary">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Volver
+            </a>
+        </div>
+        <div class="col-md-1">
+            <button type="submit" class="btn btn-success" aria-hidden="true">
+                <span class="glyphicon glyphicon-ok"></span> Crear
+            </button>
+        </div>
+    </div>
+}
+<script>
+    $(document).ready(function () {
+        $('#reader').html5_qrcode(function (data) {
+                $('#txtCodigo').val(data);
+            },
+            function (error) {
+
+            }, function (videoError) {
+                alert("No hay cámara");
+            }
+        );
+    });
+</script>

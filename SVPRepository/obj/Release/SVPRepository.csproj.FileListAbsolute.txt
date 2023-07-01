@@ -1,0 +1,14 @@
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\SVPRepository.dll.config
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\SVPRepository.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\SVPRepository.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\EntityFramework.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\Interfaces.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\SVPDomain.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\Interfaces.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\SVPDomain.pdb
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\EntityFramework.xml
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\obj\Release\SVPRepository.csprojResolveAssemblyReference.cache
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\obj\Release\SVPRepository.dll
+C:\Users\armio\Desktop\ProyectoFinal\colegio-otuzco-svp\SVPRepository\obj\Release\SVPRepository.pdb

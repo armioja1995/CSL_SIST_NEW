@@ -1,0 +1,104 @@
+﻿@model SVPWeb.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div class="container">
+    <div class="modal-body modal-dialog">
+        <div class="dl-horizontal">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="header" style="padding:35px 50px; background-color: #808080;color:white !important;text-align: center;font-size: 30px;">
+                    <h4 style="font-size: 30px;"><span class="glyphicon glyphicon-cog"></span> Configuración</h4>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form">
+                        <div class="form-group">
+                            <div class="col-md-offset-3">
+                                <label for="usrname"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
+                                @if (Model.HasPassword)
+                                {
+                                    @Html.ActionLink("  Cambie su Contraseña...!", "ChangePassword")
+                                }
+                                else
+                                {
+                                    @Html.ActionLink("Create", "SetPassword")
+                                }
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-3">
+                                <label for="psw"><span class="glyphicon glyphicon-user"></span> Inicios Afuera</label>
+                               @Model.Logins.Count [
+                            @Html.ActionLink("Manage", "ManageLogins") ]
+                            </div>
+                        </div>
+                        @*<div class="checkbox col-md-offset-3">
+                            <label>@Html.CheckBoxFor(m => m.RememberMe) Recordarme</label>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Iniciar Sesión</button>*@
+                    </form>
+                </div>
+            </div>
+
+
+
+            @*
+                Phone Numbers can used as a second factor of verification in a two-factor authentication system.
+
+                 See <a href="http://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
+                    for details on setting up this ASP.NET application to support two-factor authentication using SMS.
+
+                 Uncomment the following block after you have set up two-factor authentication
+            *@
+            @*
+                <dt>Phone Number:</dt>
+                <dd>
+                    @(Model.PhoneNumber ?? "None")
+                    @if (Model.PhoneNumber != null)
+                    {
+                        <br />
+                        <text>[&nbsp;&nbsp;@Html.ActionLink("Change", "AddPhoneNumber")&nbsp;&nbsp;]</text>
+                        using (Html.BeginForm("RemovePhoneNumber", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <text>[<input type="submit" value="Remove" class="btn-link" />]</text>
+                        }
+                    }
+                    else
+                    {
+                        <text>[&nbsp;&nbsp;@Html.ActionLink("Add", "AddPhoneNumber")
+                    }
+                </dd>
+            *@
+            @*<dt>Two-Factor Authentication:</dt>
+            <dd>
+                <p>
+                    There are no two-factor authentication providers configured. See <a href="http://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
+                    for details on setting up this ASP.NET application to support two-factor authentication.
+                </p>*@
+                @*@if (Model.TwoFactor)
+                    {
+                        using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <text>Enabled
+                            <input type="submit" value="Disable" class="btn btn-link" />
+                            </text>
+                        }
+                    }
+                    else
+                    {
+                        using (Html.BeginForm("EnableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <text>Disabled
+                            <input type="submit" value="Enable" class="btn btn-link" />
+                            </text>
+                        }
+                    }*@
+            </dd>
+        </div>
+    </div>
+</div>

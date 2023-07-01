@@ -1,0 +1,76 @@
+﻿@model SVPDomain.Sede
+
+@{
+    Layout = null;
+}
+
+<div id="Imprimir">
+
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer" style="text-align:center">Sede - @Model.NombreSede</legend>
+    </div>
+
+    <div class="container panel-">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <form class="dl-horizontal col-md-offset-3">
+                    <dt>
+                        Direccion:
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Direccion)
+                    </dd>
+                    <dt>
+                        Teléfono:
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Telefono)
+                    </dd>
+                </form>
+                <div class="form-inline" action="Sedes/Details/@Model.IdSede" method="post" role="form">
+                    <table class="table table-striped table-responsive  table-hover" style="border-style: initial; border-color: lightslategray">
+                        <thead style="background-color: palegreen">
+                            <tr>
+                                <th>Ambiente</th>
+                                <th>Foto</th>
+                                <th>Descripcion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in ViewBag.Detalle)
+                            {
+                                <tr>
+                                    <td style="text-align:center">@item.Ambiente.Nombre</td>
+                                    <td style="text-align:center">
+                                        @if (!string.IsNullOrEmpty(item.Ambiente.Foto))
+                                        {
+                                            <img src="@Url.Content(item.Ambiente.Foto)" alt="Image" style="width: 50px; height: 50px; max-width: 50%; height: 50px" />
+                                        }
+                                    </td>
+                                    <td style="text-align:center">@item.Ambiente.Descripcion</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container col-md-offset-1">
+        <div class="col-md-2 col-md-offset-3">
+            <a href="~/Sedes/index" class="btn btn-danger">
+                Cerrar
+            </a>
+        </div>
+        <div class="col-md-1">
+            <a href="~/Sedes/Edit/@Html.DisplayFor(model => model.IdSede)" class="btn btn-warning">
+                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+            </a>
+        </div>
+    </div>
+    <div class="col-md-6 col-md-offset-5">
+        <a href="javascript:genPDF()" style="color: aqua">
+            Descargar PDF
+        </a>
+    </div>
+</div>
