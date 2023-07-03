@@ -45,6 +45,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,22 +55,1504 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="accessUser_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="additionalexam.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="adolescente.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="adulto.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="adultomayor.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AlergiasInmunizaciones.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AntecedenteAsistencial.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Antecedentes.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AntecedentesmEDICOS_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AntecedentesOcupacionales_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="applicationhierarchy.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="area.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetRoles.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserClaims.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserLogins.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUsers.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="attentioninarea.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="attentioninareacomponent.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Audiometria.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="authorizedperson.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="auxiliaryexam.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="blacklistperson.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarDistritos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarHospitalizacionHabitaciones_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarServiciosHospitalizacion_1_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarTicketsDetalle_1_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarTickets_1_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="calendar.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cardiologia.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cie10.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIIUI.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodigoEmpresa.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="component.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="componentfield.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="componentfields.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="componentfieldvalues.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="componentfieldvaluesrecommendation.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="componentfieldvaluesrestriction.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="configdx.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cotizacion.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CotizacionOc.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CotizacionOcDetaill.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuidadoPreventivo.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuidadoPreventivoComentario.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="datahierarchy.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="deploymentfile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverDatosPaciente_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverHabitos_Personales_ListaAntecedentesFamiliares_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverHabitos_Personales_ListaHabitosNoxivos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverHabitos_Personales_ListaMedicosPersonales_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverValorCampoPorServicioMejoradoUnServicio_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverValorCampoPorServicioMejorado_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverValoresEkgHudbay_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverValoresSTSHudbay_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="diagnosticrepository.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalContactCenter.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="diseases.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dxfrecuente.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dxfrecuentedetalle.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="email.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="embarzo.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="envionatclar.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="especiality.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Espirometria.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExamenByDefaultOrAssigned_comFields_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExamenByDefaultOrAssigned_components_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExamenByDefaultOrAssigned_valueFieldsRecome_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExamenByDefaultOrAssigned_valueFieldsRestri_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExamenByDefaultOrAssigned_valueFields_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="facturacion.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="facturaciondetalle.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaDeudora_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="familymedicalantecedents.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaCreditoXEmpresa_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaCredito_Asistencial_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaCredito_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaFarmaciaAsistencial_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaFarmaciaSeguros_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaResonancias_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaTipoExamen_Asistencial_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaTipoExamen_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaTipoPago_Asistencial_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaTipoPago_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaTipoProtocoloSeguros_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaTipoProtocolo_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaVentas_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ges.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getAccessUserMonth_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllComponentsByRoleNodeId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllPuestos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAlturaEstructural_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAnamnesisReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAntecedentConsolidateForService1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAntecedentConsolidateForService2_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAntecedentConsolidateForService3_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAntecedentConsolidateForService4_SP_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAptitudeCertificateRefactNew2_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAptitudeCertificateRefactNew3_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAptitudeCertificateRefactNew_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAptitudeCertificateRefact_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAptitudMedicoServicio_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAudiometriaCoimolache_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getBaucher_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCAPC_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCAPE_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCAPSD_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCAPSM_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCarneVacuna_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getComponentsExist_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getComponetsDownload_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetConcatenatenoxioushabits_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCustionarioAudiometria_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDataHierarchyForComboDepartamento_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDataHierarchyForComboDistrito_1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDataHierarchyForComboProvincia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDataHierarchyForCombo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDataOrganizationId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDatosProtocolo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDatosTrabajador_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDevolverAntecedentesPersonales_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDevolverDatosUsuarioFirma_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDevolverDatosUsuarioGraboExamen_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDiagnosticRepositoryByComponent1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDiagnosticRepositoryByComponent2_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDiagnosticRepositoryByComponent3_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDigitalContactCenterFechaCita_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDigitalContactCenterNewFechaCita_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDigitalContactCenterNew_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDigitalContactCenter_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDiseasesPagedAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDoctoPhisicalExam_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDxFrecuentes_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetEmbarazoFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetFamilyMedicalAntecedentsPagedAndFilteredByPersonId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetFamilyMedicalAntecedentsReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetFichaPsicologicaOcupacional_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getFile_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetFirmaMedicos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetFormAction_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHistoriaClinicaPsicologica_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHistoryPagedAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHistoryReportA_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHistoryReportB_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHistoryReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHospitalizacionCheckList_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHospitalizacionEpicrisisforHospitalizacionId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHospitalizacionIndicacionesMedicasId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHospitalizacionNotasEnfHospitalizacionId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHospitalizacionNotasMedHospitalizacionId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHospitalizacionPagedAndFilteredEstadisticas_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHospitalizacionPagedAndFiltered_1_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetInfoMedicalCenter_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getInfoPayment_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getInfoPersonForAdmin_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getInfoPerson_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetInformacionProtocoloCompletoAsService_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetInformacionProtocoloservicio_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetInformacion_Laboratorio_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetInformacion_OtrosExamenes_New_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetInformacion_OtrosExamenes_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getInfoUserclient_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetJoinOrganizationAndLocation_List_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetJoinOrganizationAndLocation_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetListaAtencionesParaHistoria_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getListRequestComponents_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetListserviceToAptitud_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getListSmsPendientes_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getListUsersForAdmin_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getListUsers_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetListValueComponent_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetMusculoEsqueletico_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetNoxiousHabitsPagedAndFilteredByPersonId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetNoxiousHabitsReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetObtenerFirmaMedicoExamen_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetObtenerFirmaMedico_2_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetObtenerUsuarioAnterior_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getOrdenReporte_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetOrganizationFacturacion_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getOrSetRequestComponents_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPacientReportEPSFirmaMedicoOcupacional_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPacientReportEPS_NewOrganizationId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPacientReportEPS_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPacientsPagedAndFilteredByPErsonId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPacientsPagedAndFiltered_Apellidos_Nombre_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPacientsPagedAndFiltered_Apellidos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPacientsPagedAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPacient_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPersonMedicalHistoryPagedAndFilteredByPersonId1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPersonMedicalHistoryPagedAndFilteredByPersonId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPersonMedicalHistoryReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPlanIntegralAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetProblemaPagedAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetProtocolComponentsList_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetProtocolComponents_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetProtocolPagedAndFiltered_FILT_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetProtocolPagedAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getPurchaseEfectivoAndOnline_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getPurchaseVentanillaAndOnline_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetRecetaToReportConsolidado_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetRecetaToReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getRecomendations_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportAntropometria_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportAudiometria_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportCocainaMarihuana_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportConsentimiento_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportCuestionarioEspirometria_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportCuestionarioNordico_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReporteErgnomia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportElectroGold_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReporteLumboSaca_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReporteOtoscopia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReporteSintomaticoRespiratorio_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReporteSomnolencia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportEstudioElectrocardiografico_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReporteUCOsteoCoimalache_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportEvaluacionCardiologia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportEvaluacionPsicolaborlaPersonal_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportEvaNeurologica_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportEvaOsteoSanMartin_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportFichaOtoscopia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportFuncionesVitales_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportHistoriaOcupacional_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportInformeRadiografico_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportOdontograma_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportOsteoCoimalache_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportOsteoMuscularNuevo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportRadiologico_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportTamizajeDermatologico_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportTestVertigo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetReportToxicologico_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getRestrictions_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetRoleNodeComponentProfileByRoleNodeId__SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSelectedIndexChanged_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceByHospForCombo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceByPersonForCombo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentConclusionesDxServiceIdReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentConclusionesDxServiceIdReport_TODOS_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentConclusionesDxServiceId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentDiagnosticsReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentDisgnosticsByServiceId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentDisgnosticsForGridView_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentFields1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentFields2_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsCulminados_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsForManagementReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsInfo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsReportC_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsReportSC_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsReport_2_DiagnosticRepository_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsReport_2_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsReport_DxList_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsReport_New312_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsReport_NewLab_1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentsReport_NewLab_2_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponents_1_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceComponentTotalDiagnostics_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceData_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceDisgnosticsReports_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceForTramasPageAndFilteredAmbulatorio_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceForTramasPageAndFilteredEmergencia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceForTramasPageAndFilteredHospitalizacion_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceForTramasPageAndFilteredPartos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceForTramasPageAndFilteredProcedimientosCirugias_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceInformationHosp_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getServiceInformation_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicePersonData_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceRecommendationByDiagnosticRepositoryIdReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceRecommendationByDiagnosticRepositoryId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceRecommendationByServiceId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceRestrictionByDiagnosticRepositoryIdReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceRestrictionsByDiagnosticRepositoryId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceRestrictionsForGridView_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicesConsolidateForService_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicesCovid19ANTIGENO_FILTERS_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicesCovid19MOLECULAR_FILTERS_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicesCovid19_FILTERS_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicesCovid19_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceShort_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicesPagedAndFilteredAndComponentes_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicesPagedAndFilteredEstadisticasNoOc_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicesPagedAndFilteredEstadisticas_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServicesPagedAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getServices_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSintomasCovid19_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getSolicitudesCulminadasForMonths_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSystemParameterForComboFormEso_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSystemParameterForComboForm_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSystemParameterForCombo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSystemParametersPagedAndFilteredNew2_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSystemParametersPagedAndFilteredNew_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSystemUserExternalPagedAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getSystemUser_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTicketReport_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTypeOfEEPPagedAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetValoresComponenteAMC__SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetValoresComponenteOdontogramaAusente_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetValoresComponenteOdontogramaValue1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetValoresComponenteOdontograma_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetValoresComponentesUserControl_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetValoresComponente_ObservadoAMC_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetValoresComponente_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetValoresExamenComponete_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetWorkerData_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetWorkstationDangersagedAndFiltered_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="groupoccupation.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Habitos.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialAccessUser.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="history.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HojaReclamo.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="holidays.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Horarios.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalizacion.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalizacionCheckList.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalizacionEpicrisis.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalizacionhabitacion.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalizacionIndicacionesMedicas.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalizacionNotasEnfermeria.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalizacionNotasMedicas.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalizacionservice.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="inmunizaciones.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Laboratorio.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="liquidacion.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListCalendarHorarioSambhs_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListCalendarSambhs_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListGetDiagnosticByServiceId1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListGetDiagnosticByServiceIdAndCategoryId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListGetRecommendationByServiceId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListGetRestrictionByServiceId_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListMissingExamenesNames_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboAltitud_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboDistrito_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboEstadoCivil_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboFactor_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboGennero_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboGetServiceType_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboGrupo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboLugarLabor_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboMarcaVacunaCovid_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboNivelEstudio_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboPacHospSala_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboParentesco_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboProtocolo_Particular_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboProtocolo_pre_1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboProtocolo_pre_2_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboProtocolo_Seguros_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboProtocolo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboResidencia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboServicio_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboSystemParametro_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboTipoDocumento_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboTipoSeguro_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboTipoServicio_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarComboUsuarios_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarPerson_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="location.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="log.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="markings.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="masterrecommendationrestricction.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="medication.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Medicina.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="medico.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="menssge.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="movement.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="movementdetail.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="multimediafile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NetMedicalModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NetMedicalModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NetMedicalModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NetMedicalModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NetMedicalModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Ninio.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="node.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nodedatabasestatus.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nodeorganizationlocationprofile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nodeorganizationlocationwarehouseprofile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nodeorganizationprofile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nodeserviceprofile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nodesyncstatus.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="notification.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="noxioushabits.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerAreas_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerComentariosCuidadosPreventivos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerContactoEmergencia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerEsoAntecedentesPorGrupoId1__SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerEsoAntecedentesPorGrupoId2__SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerGesoProtocol_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerIdsParaImportacionExcel_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerListadoCuidadosPreventivos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerPacientes_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerPrecioTarifario_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerProducto_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerProvincia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerPuestos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerTodasProvincia_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerTodosDepartamentos_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerValores_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="occupation.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Odontologia.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Oftalmologia.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenReporte.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="organization.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="organizationperson.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pacient.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pacientmultimediadata.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ParametrosSistema.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="payment.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="paymentDetail.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="paymentmedic.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="person.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persona.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="personmedicalhistory.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="plan.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="planintegral.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="planvigilancia.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="planvigilanciadiseases.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="problema.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="procedurebyservice.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="product.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productsformigration.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productwarehouse.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="professional.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="protocol.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="protocolcomponent.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="protocolsystemuser.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Psicologia.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Psicosensometrico.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RayosX.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="receipHeader.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="receta.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="recetadespacho.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="recommendation.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteAtencionMedica_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteGerencial_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatrizLaZanja_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatrizSanLorenzo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatrizShauindo_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteOsteomuscular_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="restrictedwarehouseprofile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="restriction.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResumenTipoEmpresa_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResumenTipoPago_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Riesgos.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rolcuota.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rolcuotadetalle.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rolenode.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rolenodecomponentprofile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rolenodeprofile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="searchPersonForAdmin_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="searchPerson_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="secuential.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="servernodesync.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="serversyncstatus.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="service.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="servicecomponent.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="servicecomponentfields.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="servicecomponentfieldvalues.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="servicecomponentfieldValuesmultimedia.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="servicecomponentmultimedia.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceComponentsDownload.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="servicemultimedia.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="serviceorder.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="serviceorderdetail.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sms.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="softwarecomponentrelease.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="supplier.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="systemparameter.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="systemuser.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="systemusergobalprofile.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="systemuserrolenode.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ticket.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ticketdetalle.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tracking.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tramas.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Triaje.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="typeofeep.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateServiceComponent1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vacations.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ValoresComponenteOdontograma1_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ValoresComponentesServicio_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ValoresComponente_ManagerReport_SP_Result.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="variablesEntorno_resultadosClinicosWeb.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vigilancia.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vigilanciaservice.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="workersschedule.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="workersscheduledetail.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="workstationdangers.cs">
+      <DependentUpon>NetMedicalModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="NetMedicalModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NetMedicalModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="NetMedicalModel.edmx.diagram">
+      <DependentUpon>NetMedicalModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SVPDomain\CSL_SIST_Clases.csproj">
-      <Project>{6c52fc4a-e139-4d0a-a337-bc7a0e4fa089}</Project>
-      <Name>CSL_SIST_Clases</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SVPRepository\CSL_SIST_Repositorios.csproj">
-      <Project>{1016ead6-26da-4472-b915-7b0741201aad}</Project>
-      <Name>CSL_SIST_Repositorios</Name>
-    </ProjectReference>
+    <Content Include="NetMedicalModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NetMedicalModel.edmx</DependentUpon>
+      <LastGenOutput>NetMedicalModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="NetMedicalModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NetMedicalModel.edmx</DependentUpon>
+      <LastGenOutput>NetMedicalModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

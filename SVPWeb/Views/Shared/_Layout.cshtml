@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/x-icon" href="/svpo.png" />
-    <title>- San Vicente de Paul -</title>
+    <title>Clinica San Lorenzo</title>
 
     @*@Styles.Render("~/Content/css")*@
     @Scripts.Render("~/bundles/modernizr")
@@ -32,7 +32,7 @@
 
     <style>
         .nav-md {
-            background-image: url('../../Insignia.png');
+            /*background-image: url('../../Insignia.png');*/
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
@@ -43,7 +43,7 @@
         function genPDF(imprime) {
             html2canvas(document.getElementById(imprime), {
                 onrendered: function (canvas) {
-                    /* var img = canvas.toDataURL("image/pjeg");*/
+                     var img = canvas.toDataURL("image/pjeg");
                     var img = canvas.toDataURL("");
                     var doc = new jsPDF();
                     doc.addImage(img, 'JPEG', -1, -1);
@@ -147,11 +147,11 @@
                             <h3>Gestión de Asistencia</h3>
                             <ul class="nav side-menu">
                                 <li>
-                                    <a><i class="fa fa-male"></i> Personal <span class="fa fa-chevron-down"></span></a>
+                                    <a><i class="fa fa-male"></i> Libro de Reclamaciones <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li>@Html.ActionLink("Lista del Personal", "Index", "Trabajador")</li>
-                                        <li>@Html.ActionLink("Registrar Personal", "Create", "Trabajador")</li>
-                                        <li>
+                                        <li>@Html.ActionLink("Historial", "Index", "HojaReclamoes")</li>
+                                        <li>@Html.ActionLink("Crear", "Create", "HojaReclamoes")</li>
+                                        @*<li>
                                             <a>Cargo<span class="fa fa-chevron-down"></span></a>
                                             <ul class="nav child_menu">
                                                 <li class="sub_menu">
@@ -161,10 +161,10 @@
                                                     @Html.ActionLink("Registrar Cargo", "Create", "Cargo")
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li>*@
                                     </ul>
                                 </li>
-                               <li>
+                               @*<li>
                                    <a><i class="fa fa-check-square-o"></i> Control de Personal <span class="fa fa-chevron-down"></span></a>
                                    <ul class="nav child_menu">
                                        <li>@Html.ActionLink("Lista de Asistencia", "Index", "AsistenciaTra")</li>
@@ -192,15 +192,15 @@
                                            </ul>
                                        </li>
                                    </ul>
-                                </li>
-                                <li>
+                                </li>*@
+                                @*<li>
                                     <a><i class="fa fa-user"></i> Apoderado <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li>@Html.ActionLink("Lista de Apoderados", "Index", "Apoderado")</li>
                                         <li>@Html.ActionLink("Registrar Apoderado", "Create", "Apoderado")</li>
                                     </ul>
-                                </li>
-                                <li>
+                                </li>*@
+                                @*<li>
                                     <a><i class="fa fa-users"></i> Alumnos <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li>@Html.ActionLink("Lista de Alumnos", "Index", "Alumno")</li>
@@ -228,8 +228,8 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
-                                <li>
+                                </li>*@
+                                @*<li>
                                     <a><i class="fa fa-check-square-o"></i> Control de Alumno <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li>@Html.ActionLink("Lista de Asistencia", "Index", "AsistenciaAl")</li>
@@ -257,8 +257,8 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
-                                <li>
+                                </li>*@
+                                @*<li>
                                     <a><i class="fa fa-sign-in"></i> Visitantes <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li>@Html.ActionLink("Lista de Visitantes", "Index", "Visitante")</li>
@@ -275,10 +275,10 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
+                                </li>*@
                             </ul>
                         </div>   
-                        <div class="menu_section">
+                        @*<div class="menu_section">
                             <h3>Gestión de Bienes</h3>
                             <ul class="nav side-menu">
                                 <li>
@@ -315,7 +315,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
+                        </div>*@
                     @*}
                         @if (User.IsInRole("Auxiliar"))
                         {

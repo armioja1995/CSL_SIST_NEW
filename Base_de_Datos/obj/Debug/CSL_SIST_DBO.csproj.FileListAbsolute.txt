@@ -1,0 +1,13 @@
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\obj\Debug\CSL_SIST_DBO.csproj.AssemblyReference.cache
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\obj\Debug\CSL_SIST_DBO.csproj.SuggestedBindingRedirects.cache
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\obj\Debug\CSL_SIST_DBO.csproj.CoreCompileInputs.cache
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\obj\Debug\Base_de_Datos.exe
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\obj\Debug\Base_de_Datos.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\bin\Debug\Base_de_Datos.exe.config
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\bin\Debug\Base_de_Datos.exe
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\bin\Debug\Base_de_Datos.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\bin\Debug\EntityFramework.dll
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\bin\Debug\EntityFramework.xml
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Base_de_Datos\obj\Debug\CSL_SIST_DBO.csproj.CopyComplete

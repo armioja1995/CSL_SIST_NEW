@@ -14,3 +14,4 @@ D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\obj\Debug\CSL_SIST_Repositorios.cs
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\obj\Debug\CSL_SIST_Repositorios.csproj.CopyComplete
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\obj\Debug\SVPRepository.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\obj\Debug\SVPRepository.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\bin\Debug\SVPDomain.dll.config

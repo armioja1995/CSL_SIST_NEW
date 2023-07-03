@@ -1,6 +1,8 @@
 using System;
+using Interfaces;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
+using SVPRepository;
 using SVPWeb.Controllers;
 
 namespace SVPWeb.App_Start
@@ -48,26 +50,8 @@ namespace SVPWeb.App_Start
             //container.RegisterType<IMasterRepository<Trabajador>, MasterRepository<Trabajador>>();
 
 
-            //container.RegisterType<InterfaceAlumno, RepositorioAlumno>();
-            //container.RegisterType<InterfaceAmbiente, RepositorioAmbiente>();
-            //container.RegisterType<InterfaceApoderado, RepositorioApoderado>();
-            //container.RegisterType<InterfaceAsistenciaAl, RepositorioAsistenciaAl>();
-            //container.RegisterType<InterfaceAsistenciaTra, RepositorioAsistenciaTra>();
-            //container.RegisterType<InterfaceBien, RepositorioBien>();
-            //container.RegisterType<InterfaceCargo, RepositorioCargo>();
-            //container.RegisterType<InterfaceDetalleSede, RepositorioDetalleSede>();
-            //container.RegisterType<InterfaceGrado, RepositorioGrado>();
-            //container.RegisterType<InterfaceJustificacionAl, RepositorioJustificacionAl>();
-            //container.RegisterType<InterfaceJustificacionTra, RepositorioJustificacionTra>();
-            //container.RegisterType<InterfaceMovimiento, RepositorioMovimiento>();
-            //container.RegisterType<InterfacePermisoHorasLaborales, RepositorioPermisoHoraLaboral>();
-            //container.RegisterType<InterfaceProveedor, RepositorioProveedor>();
-            //container.RegisterType<InterfaceSeccion, RepositorioSeccion>();
-            //container.RegisterType<InterfaceSede, RepositorioSede>();
-            //container.RegisterType<InterfaceTrabajador, RepositorioTrabajador>();
-            //container.RegisterType<InterfaceVisitante, RepositorioVisitante>();
-            //container.RegisterType<InterfaceVisitaVisitante, RepositorioVisitaVisitante>();
-            //container.RegisterType<InterfacePermisoAlumno, RepositorioPermisoAlumno>();
+            container.RegisterType<HojaReclamoInterface, HojaReclamoRepositorio>();
+            container.RegisterType<PersonInterface, PersonRepositorio>();
         }
     }
 }

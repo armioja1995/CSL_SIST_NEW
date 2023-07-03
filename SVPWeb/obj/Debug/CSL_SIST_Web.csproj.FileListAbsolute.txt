@@ -116,3 +116,4 @@ D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPWeb\bin\Microsoft.Owin.Security.MicrosoftAcco
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPWeb\obj\Debug\CSL_SIST_Web.csproj.CopyComplete
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPWeb\obj\Debug\SVPWeb.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPWeb\obj\Debug\SVPWeb.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPWeb\bin\SVPDomain.dll.config

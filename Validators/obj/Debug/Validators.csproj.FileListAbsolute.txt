@@ -84,3 +84,4 @@ D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\obj\Debug\Validators.csproj.CoreCompi
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\obj\Debug\Validators.csproj.CopyComplete
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\obj\Debug\Validators.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\obj\Debug\Validators.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\SVPDomain.dll.config

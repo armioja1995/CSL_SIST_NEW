@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7d0d2dade4fa45fa99ef612b6f25a86a" Name="Diagram1">
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.additionalexam" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.adolescente" Width="1.5" PointX="3" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.adulto" Width="1.5" PointX="3" PointY="52.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.adultomayor" Width="1.5" PointX="3" PointY="58.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.AlergiasInmunizaciones" Width="1.5" PointX="32" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.AntecedenteAsistencial" Width="1.5" PointX="15.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Antecedentes" Width="1.5" PointX="32" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.applicationhierarchy" Width="1.5" PointX="12.5" PointY="47.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.area" Width="1.5" PointX="5.25" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.AspNetRoles" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.AspNetUsers" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.attentioninarea" Width="1.5" PointX="12.5" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.attentioninareacomponent" Width="1.5" PointX="14.75" PointY="56" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Audiometria" Width="1.5" PointX="34.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.authorizedperson" Width="1.5" PointX="14.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.auxiliaryexam" Width="1.5" PointX="14.25" PointY="88.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.blacklistperson" Width="1.5" PointX="3" PointY="65.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.calendar" Width="1.5" PointX="6" PointY="84.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Cardiologia" Width="1.5" PointX="34.25" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.cie10" Width="1.5" PointX="4.5" PointY="72.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.CIIUI" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.CodigoEmpresa" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.component" Width="1.5" PointX="12" PointY="67.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.componentfield" Width="1.5" PointX="12.75" PointY="107.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.componentfields" Width="1.5" PointX="15" PointY="109" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.componentfieldvalues" Width="1.5" PointX="25.5" PointY="81.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.componentfieldvaluesrecommendation" Width="1.5" PointX="27.75" PointY="82.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.componentfieldvaluesrestriction" Width="1.5" PointX="30.75" PointY="82.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.cotizacion" Width="1.5" PointX="22.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.CotizacionOc" Width="1.5" PointX="22.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.CotizacionOcDetaill" Width="1.5" PointX="16.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.CuidadoPreventivo" Width="1.5" PointX="22.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.datahierarchy" Width="1.5" PointX="24.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.deploymentfile" Width="1.5" PointX="7.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.diagnosticrepository" Width="1.5" PointX="17.25" PointY="86.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.DigitalContactCenter" Width="1.5" PointX="8" PointY="90.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.diseases" Width="1.5" PointX="6.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.dxfrecuente" Width="1.5" PointX="9" PointY="68.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.dxfrecuentedetalle" Width="1.5" PointX="11.25" PointY="63.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.email" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.embarzo" Width="1.5" PointX="3" PointY="81.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.envionatclar" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.especiality" Width="1.5" PointX="24.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Espirometria" Width="1.5" PointX="34.25" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.facturacion" Width="1.5" PointX="22.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.facturaciondetalle" Width="1.5" PointX="25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.familymedicalantecedents" Width="1.5" PointX="3" PointY="87" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.ges" Width="1.5" PointX="7.5" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.groupoccupation" Width="1.5" PointX="5.25" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Habitos" Width="1.5" PointX="32" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.HistorialAccessUser" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.history" Width="1.5" PointX="3" PointY="91.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.HojaReclamo" Width="1.5" PointX="3" PointY="99" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Horarios" Width="1.5" PointX="24.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.hospitalizacion" Width="1.5" PointX="17.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.hospitalizacionCheckList" Width="1.5" PointX="20" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.hospitalizacionEpicrisis" Width="1.5" PointX="20" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.hospitalizacionhabitacion" Width="1.5" PointX="26.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.hospitalizacionIndicacionesMedicas" Width="1.5" PointX="20" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.hospitalizacionNotasEnfermeria" Width="1.5" PointX="20" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.hospitalizacionNotasMedicas" Width="1.5" PointX="20" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.hospitalizacionservice" Width="1.5" PointX="20" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.inmunizaciones" Width="1.5" PointX="3" PointY="105.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Laboratorio" Width="1.5" PointX="34.25" PointY="44.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.liquidacion" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.location" Width="1.5" PointX="3" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.log" Width="1.5" PointX="7.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.markings" Width="1.5" PointX="9.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.masterrecommendationrestricction" Width="1.5" PointX="25.5" PointY="77.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.medication" Width="1.5" PointX="14.25" PointY="97.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Medicina" Width="1.5" PointX="34.25" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.medico" Width="1.5" PointX="26.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.menssge" Width="1.5" PointX="11.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.movement" Width="1.5" PointX="10.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.movementdetail" Width="1.5" PointX="15.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.multimediafile" Width="1.5" PointX="3" PointY="109.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Ninio" Width="1.5" PointX="3" PointY="114.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.node" Width="1.5" PointX="10.25" PointY="35.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.nodedatabasestatus" Width="1.5" PointX="10.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.nodeorganizationlocationprofile" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.nodeorganizationlocationwarehouseprofile" Width="1.5" PointX="12.5" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.nodeorganizationprofile" Width="1.5" PointX="3" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.nodeserviceprofile" Width="1.5" PointX="12.5" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.nodesyncstatus" Width="1.5" PointX="13.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.notification" Width="1.5" PointX="15.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.noxioushabits" Width="1.5" PointX="3" PointY="130.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.occupation" Width="1.5" PointX="9.75" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Odontologia" Width="1.5" PointX="34.25" PointY="63.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Oftalmologia" Width="1.5" PointX="34.25" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.OrdenReporte" Width="1.5" PointX="26.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.organization" Width="1.5" PointX="0.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.organizationperson" Width="1.5" PointX="26.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.pacient" Width="1.5" PointX="3" PointY="134.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.pacientmultimediadata" Width="1.5" PointX="5.25" PointY="134.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.ParametrosSistema" Width="1.5" PointX="22.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.payment" Width="1.5" PointX="24.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.paymentDetail" Width="1.5" PointX="26.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.paymentmedic" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.person" Width="1.5" PointX="0.75" PointY="80.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Persona" Width="1.5" PointX="29.75" PointY="49.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.personmedicalhistory" Width="1.5" PointX="9" PointY="84.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.plan" Width="1.5" PointX="28.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.planintegral" Width="1.5" PointX="28.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.planvigilancia" Width="1.5" PointX="3.75" PointY="77.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.planvigilanciadiseases" Width="1.5" PointX="15" PointY="74.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.problema" Width="1.5" PointX="28.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.procedurebyservice" Width="1.5" PointX="14.25" PointY="103.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.product" Width="1.5" PointX="13.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.productsformigration" Width="1.5" PointX="28.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.productwarehouse" Width="1.5" PointX="13.5" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.professional" Width="1.5" PointX="3" PointY="144" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.protocol" Width="1.5" PointX="9.75" PointY="73" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.protocolcomponent" Width="1.5" PointX="17.25" PointY="72.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.protocolsystemuser" Width="1.5" PointX="14.75" PointY="63.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Psicologia" Width="1.5" PointX="34.25" PointY="73.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Psicosensometrico" Width="1.5" PointX="34.25" PointY="77.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.RayosX" Width="1.5" PointX="34.25" PointY="80.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.receipHeader" Width="1.5" PointX="28.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.receta" Width="1.5" PointX="28.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.recetadespacho" Width="1.5" PointX="15.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.recommendation" Width="1.5" PointX="22.5" PointY="87.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.restrictedwarehouseprofile" Width="1.5" PointX="10.5" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.restriction" Width="1.5" PointX="22.5" PointY="82.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Riesgos" Width="1.5" PointX="34.25" PointY="86.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.rolcuota" Width="1.5" PointX="12.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.rolcuotadetalle" Width="1.5" PointX="15" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.rolenode" Width="1.5" PointX="12.5" PointY="42.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.rolenodecomponentprofile" Width="1.5" PointX="17.75" PointY="56.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.rolenodeprofile" Width="1.5" PointX="14.75" PointY="42.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.secuential" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.servernodesync" Width="1.5" PointX="30.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.serversyncstatus" Width="1.5" PointX="5.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.service" Width="1.5" PointX="12" PointY="75.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.servicecomponent" Width="1.5" PointX="20.25" PointY="83.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.servicecomponentfields" Width="1.5" PointX="25.5" PointY="88" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.servicecomponentfieldvalues" Width="1.5" PointX="27.75" PointY="87.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.servicecomponentfieldValuesmultimedia" Width="1.5" PointX="5.25" PointY="110.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.servicecomponentmultimedia" Width="1.5" PointX="8.25" PointY="110.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.ServiceComponentsDownload" Width="1.5" PointX="30.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.servicemultimedia" Width="1.5" PointX="5.25" PointY="106.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.serviceorder" Width="1.5" PointX="12.75" PointY="115.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.serviceorderdetail" Width="1.5" PointX="15" PointY="78.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Servicio" Width="1.5" PointX="32" PointY="54.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.sms" Width="1.5" PointX="30.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.softwarecomponentrelease" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.supplier" Width="1.5" PointX="8.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.sysdiagrams" Width="1.5" PointX="24.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.systemparameter" Width="1.5" PointX="30.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.systemuser" Width="1.5" PointX="3" PointY="179.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.systemusergobalprofile" Width="1.5" PointX="14.75" PointY="48.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.systemuserrolenode" Width="1.5" PointX="14.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.ticket" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.ticketdetalle" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.tracking" Width="1.5" PointX="0.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Tramas" Width="1.5" PointX="2.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.Triaje" Width="1.5" PointX="34.25" PointY="93.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.typeofeep" Width="1.5" PointX="5.25" PointY="90.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.vacations" Width="1.5" PointX="7.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.variablesEntorno_resultadosClinicosWeb" Width="1.5" PointX="12.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.vigilancia" Width="1.5" PointX="6" PointY="78.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.vigilanciaservice" Width="1.5" PointX="14.25" PointY="84.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.warehouse" Width="1.5" PointX="8.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.workersschedule" Width="1.5" PointX="14.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.workersscheduledetail" Width="1.5" PointX="16.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.workstationdangers" Width="1.5" PointX="5.25" PointY="94.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.configdx" Width="1.5" PointX="32.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.CuidadoPreventivoComentario" Width="1.5" PointX="30.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.holidays" Width="1.5" PointX="4.75" PointY="33.75" IsExpanded="true" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_adolescente_person" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_adulto_person" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_adultomayor_person" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_AlergiasInmunizaciones_dbo_Persona_v_PersonaId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Antecedentes_dbo_Persona_v_PersonaId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_AppHerarchy_ProtocolSystemUser_i_AppHerarchyId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_ApplicationHerarchy_SystemUserGlobal_i_ApplicationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_applicationhierarchy_rolenodeprofile_i_ApplicationHierarchyI" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Area_Ges_v_AreaCode" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Location_Area_v_AreaCode" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_AttentionArea_AttentionAreaComponent_v_AttentionAreaId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Node_AttentionInArea_i_NodeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Component_AttentionAreaComponent_v_ComponentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Audiometria_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Component_AuxiliaryExam_v_ComponentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Service_AuxiliaryExam_v_ServiceId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_BlackListPerson_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_Calendar_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Service_Calendar_v_ServiceId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Cardiologia_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Cie10_Diseases_v_CIE10Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dxfrecuente_cie10_v_CIE10Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Component_ComponentFields_v_MedicalExamFields" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Component_ProtocolComponent_v_ComponentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Component_Recommendation_v_RecommendationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Component_Restricction_v_ComponentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Component_RoleNodeComponent_v_ComponentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Component_ServiceComponent_v_ComponentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_ComponentField_ComponentFields_v_ComponentFieldId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_ComponentFieldId_ComponentFieldValues_v_ComponentFieldValues" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_ComponentField_DiagnosticRepository_v_ComponentFieldsId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_ComponentFields_ServiceComponentFields_v_MedicalExamFieldsId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_ComponentFieldValues_ComponentFieldVauesRecommendation_v_Com" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_ComponentFieldValues_ComponentFieldVauesRestriction_v_Compon" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Diseases_ComponentFieldValues_v_Diseases" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_ComponentFieldValues_ServiceComponentFieldValues_v_Component" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_MasterRecommendationRestricction_ComponentFieldValuesRecomme" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_MasterRecommendationRestricction_ComponentFieldValuesRestric" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_DeplymentFile_SoftwareComponentRelease_i_DeploymentFileId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_DiagnosticRepository_Recommendation_v_DiagnosticRepositoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_DiagnosticRepository_RestrictionByDiagnostic_v_DiagnosticRep" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_DiseasesId_DiagnosticRepository_v_DiseasesId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Service_DiagnosticRepository_v_ServiceId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_DigitalContactCenter_DigitalContactCenter" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_DigitalContactCenter_person" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_DigitalContactCenter_service" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Diseases_FamilyMedicalAntecedents_v_DiseasesId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Diseases_PersonalmMedicalHistory_v_DiseasesId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dxfrecuente_dxfrecuente_vDiseasesId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_planvigilanciadiseases_diseases" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dxfrecuentedetalle_dxfrecuentedetalle_v_DxFrecuenteId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_embarzo_person1" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Espirometria_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_facturaciondetalle_Facturacion_v_FacturacionId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_FamilyMedicalAntecedents_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Ges_Occupation_v_GesCode" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_GroupOccupation_Occupation_v_GroupOccupationCode" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Location_GroupOccupation_v_GroupOccupationCode" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Habitos_dbo_Persona_v_PersonaId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_History_TypeofEPP_v_HistoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_History_WorkstationDangers_v_HistoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_History_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_HojaReclamo_person" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_hospitalizacionCheckList_hospitalizacion" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_hospitalizacionEpicrisis_hospitalizacion" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_hospitalizacionIndicacionesMedicas_hospitalizacion" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_hospitalizacionNotasEnfermeria_hospitalizacion" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_hospitalizacionNotasMedicas_hospitalizacion" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_hospitalizacionservice_hospitalizacion" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_inmunizaciones_person" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Laboratorio_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_liquidacion_organization" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Location_NodeOrganizationLocationProfile_v_LocationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Location_Warehouse_v_LocationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Organization_Location_v_OrganizationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Organization_NodeOrganizationLocationWarehouseProfile_v_Orga" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Service_Medication_v_ServiceId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Medicina_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Movement_MovementDetail_i_MovementId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Supplier_Movement_i_SupplierId_i_NodeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Warehouse_Movement_i_WarehouseId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Product_MovementDetail_i_ProductId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Warehouse_MovementDetail_i_WarehouseId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_MultimediaFile_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_MultimediaFile_ServiceComponentFieldValuesMultimedia_v_Multi" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_MultimediaFile_ServiceComponentMultimedia_v_MultimediaFileId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_MultimediaFile_ServiceMultimedia_v_MultimediaFileId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_Ninio_person" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Node_NodeOrganizationLocationProfile_v_NodeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Node_NodeOrganizationLocationWarehouseProfile_i_NodeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Node_NodeServiceProfile_i_NodeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_Node_Node_Organization_i_NodeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_node_rolenode_i_NodeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Organization_NodeOrganizationLocationProfile_v_OrganizationI" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Organization_NodeOrganizationLocationWarehouseProfile_v_Loca" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Warehouse_NodeOrganizationLocationWarehouseProfile_v_Warehou" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_Organization_NodeOrganization_i_OrganizationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_NoxiousHabits_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Odontologia_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Oftalmologia_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Organization_Warehouse_i_OrganizationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_pacient_pacientemultimediadata_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_Pacient_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_PersonMedicalHistory_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_Service_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Person_SystemUser_i_PersonId_i_NodeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_vigilancia_person" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_Person_Professional_v_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Servicio_dbo_Persona_v_PersonaId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_planvigilanciadiseases_planvigilancia" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_vigilancia_planvigilancia" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Service_Procedure_v_ServiceId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Product_ProductWarehouse_i_ProductId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Warehouse_ProductWarehouse_i_WarehouseId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Protocol_ProtocolComponent_v_ProtocolId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_Protocol_ProtocolSystemUser_v_ProtocolId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Protocol_Service_v_ProtocolId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_serviceorderdetail_protocol_v_ProtocolId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Psicologia_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Psicosensometrico_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_RayosX_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Service_Recommendation_v_ServiceId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Warehouse_RestrictedWarehouseProfile_v_WarehouseId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Service_Restricction_v_ServiceId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Riesgos_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_rolcuotadetalle_rolcuotadetalle_v_RolCuotaId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_RoleNode_RoleNodeComponent_i_NodeId_i_RoleId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_RoleNode_RoleNodeProfile_i_NodeId_i_RoleId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_RoleNode_SystemUserRoleNode_i_NodeId_i_RoleId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_Service_ServiceComponent_v_ServiceId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_vigilanciaservice_service" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_Service_ServiceMultimedia_v_ServiceId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_ServiceComponent_ServiceComponentComponentFields" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_ServiceComponent_ServiceComponentMultimedia_v_ServiceCompone" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_ServiceComponentFieldIds_ServiceComponentFieldValues" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Pk_ServiceComponentFieldValues_ServiceComponentFieldValuesMulti" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.Fk_ServiceOrder_ServiceOrderDetail_v_ServiceOrderId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_dbo_Triaje_dbo_Servicio_v_ServicioId" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_ticketdetalle_ticket" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.FK_vigilanciaservice_vigilancia" ManuallyRouted="false" />
+        <AssociationConnector Association="SigesoftDesarrollo_2Model.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
