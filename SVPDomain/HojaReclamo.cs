@@ -19,12 +19,12 @@ namespace SVPDomain
         public Nullable<System.DateTime> d_fechaR { get; set; }
         public string v_IdPaciente { get; set; }
         public Nullable<int> i_Parentesco { get; set; }
-        public Nullable<bool> i_Producto { get; set; }
-        public Nullable<bool> i_Servicio { get; set; }
+        public Boolean i_Producto { get; set; }
+        public Boolean i_Servicio { get; set; }
         public string v_MontoReclamo { get; set; }
         public string v_Descripcion { get; set; }
-        public Nullable<bool> i_Reclamo { get; set; }
-        public Nullable<bool> i_Queja { get; set; }
+        public Boolean i_Reclamo { get; set; }
+        public Boolean i_Queja { get; set; }
         public string v_Detalle { get; set; }
         public string v_Pedido { get; set; }
         public byte[] b_FirmaConsumidor { get; set; }

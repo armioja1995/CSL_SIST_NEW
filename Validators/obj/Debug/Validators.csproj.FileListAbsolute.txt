@@ -75,6 +75,7 @@ D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\SVPDomain.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\SVPRepository.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\Interfaces.pdb
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\SVPDomain.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\SVPDomain.dll.config
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\SVPRepository.pdb
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\SVPRepository.dll.config
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\EntityFramework.xml
@@ -84,4 +85,3 @@ D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\obj\Debug\Validators.csproj.CoreCompi
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\obj\Debug\Validators.csproj.CopyComplete
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\obj\Debug\Validators.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\obj\Debug\Validators.pdb
-D:\WORK\DESARROLLO\CSL_SIST_NEW\Validators\bin\Debug\SVPDomain.dll.config

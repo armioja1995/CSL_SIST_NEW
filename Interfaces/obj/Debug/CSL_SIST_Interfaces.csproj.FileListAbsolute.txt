@@ -1,12 +1,12 @@
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\Interfaces.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\Interfaces.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\SVPDomain.dll
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\EntityFramework.dll
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\SVPDomain.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\SVPDomain.dll.config
+D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\EntityFramework.xml
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\obj\Debug\CSL_SIST_Interfaces.csproj.AssemblyReference.cache
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\obj\Debug\CSL_SIST_Interfaces.csproj.CoreCompileInputs.cache
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\obj\Debug\CSL_SIST_Interfaces.csproj.CopyComplete
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\obj\Debug\Interfaces.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\obj\Debug\Interfaces.pdb
-D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\EntityFramework.dll
-D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\EntityFramework.xml
-D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\SVPDomain.dll
-D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\SVPDomain.pdb
-D:\WORK\DESARROLLO\CSL_SIST_NEW\Interfaces\bin\Debug\SVPDomain.dll.config

@@ -1,12 +1,12 @@
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\SVPDomain.dll.config
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\SVPDomain.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\SVPDomain.pdb
-D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\CSL_SIST_Clases.csproj.AssemblyReference.cache
-D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\CSL_SIST_Clases.csproj.CoreCompileInputs.cache
-D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\SVPDomain.dll
-D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\SVPDomain.pdb
-D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\SVPDomain.dll.config
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\EntityFramework.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\EntityFramework.SqlServer.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\EntityFramework.xml
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\bin\Debug\EntityFramework.SqlServer.xml
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\CSL_SIST_Clases.csproj.AssemblyReference.cache
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\CSL_SIST_Clases.csproj.CoreCompileInputs.cache
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\CSL_SIST_Clases.csproj.CopyComplete
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\SVPDomain.dll
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPDomain\obj\Debug\SVPDomain.pdb

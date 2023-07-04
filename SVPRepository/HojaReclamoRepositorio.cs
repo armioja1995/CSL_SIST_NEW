@@ -1,4 +1,5 @@
 ﻿using Interfaces;
+using Microsoft.Win32;
 using SVPDomain;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static SVPDomain.ClasesNew.Enums;
 
 namespace SVPRepository
 {
@@ -20,8 +22,33 @@ namespace SVPRepository
 
         public void AddHojaReclamo(HojaReclamo _hojaReclamo)
         {
-            entidad.HojaReclamo.Add(_hojaReclamo);
-            entidad.SaveChanges();
+            string NewId0 = null;
+            try
+            {
+                _hojaReclamo.d_InsertDate = DateTime.Now;
+                //_hojaReclamo.i_InsertUserId = Int32.Parse(ClientSession[2]);
+                _hojaReclamo.i_InsertUserId = 11;
+
+                _hojaReclamo.i_IsDeleted = 0;
+                _hojaReclamo.v_ComentaryRegistros = "Primer Registro - USUARIO GENERAL";
+                //int intNodeId = int.Parse(ClientSession[0]);
+                NewId0 = Utils.Utils.GetNewId(9, Utils.Utils.GetNextSecuentialId(9, 366), "LR"); ;
+                _hojaReclamo.v_IdHojaReclamo = NewId0;
+
+                entidad.HojaReclamo.Add(_hojaReclamo);
+                entidad.SaveChanges();
+
+                Utils.Utils.SaveLog("9", "", "11", LogEventType.CREACION, "LR", "v_IdHojaReclamo=" + NewId0.ToString(), Success.Ok, null);
+            }
+            catch (Exception ex)
+            {
+              
+                var mensaje = Utils.Utils.ExceptionFormatter(ex);
+                Utils.Utils.SaveLog("9", "", "11", LogEventType.CREACION, "LR", "v_IdHojaReclamo=" + NewId0.ToString(), Success.Failed, mensaje);
+            }
+            //return NewId0;
+
+            
         }
 
         public List<HojaReclamo> AllHojaReclamo()
@@ -68,5 +95,7 @@ namespace SVPRepository
             entidad.Entry(_hojaReclamo).State = EntityState.Modified;
             entidad.SaveChanges();
         }
+
+        
     }
 }

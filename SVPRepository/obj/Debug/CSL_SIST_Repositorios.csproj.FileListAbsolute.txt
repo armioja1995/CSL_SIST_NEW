@@ -7,6 +7,7 @@ D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\bin\Debug\Interfaces.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\bin\Debug\SVPDomain.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\bin\Debug\Interfaces.pdb
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\bin\Debug\SVPDomain.pdb
+D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\bin\Debug\SVPDomain.dll.config
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\bin\Debug\EntityFramework.xml
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\bin\Debug\EntityFramework.SqlServer.xml
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\obj\Debug\CSL_SIST_Repositorios.csproj.AssemblyReference.cache
@@ -14,4 +15,3 @@ D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\obj\Debug\CSL_SIST_Repositorios.cs
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\obj\Debug\CSL_SIST_Repositorios.csproj.CopyComplete
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\obj\Debug\SVPRepository.dll
 D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\obj\Debug\SVPRepository.pdb
-D:\WORK\DESARROLLO\CSL_SIST_NEW\SVPRepository\bin\Debug\SVPDomain.dll.config

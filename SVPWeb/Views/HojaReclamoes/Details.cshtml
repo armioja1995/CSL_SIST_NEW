@@ -1,187 +1,422 @@
 ﻿@model SVPDomain.HojaReclamo
 
 @{
-    ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
 }
 
-<h2>Details</h2>
+<div id="Imprimir">
+    <div class="col-md-12 col-md-offset-0">
+        <legend class="panel-footer">
+            @*Información - @Model.v_IdHojaReclamo*@
+        </legend>
+    </div>
+    <div class="container panel">
+        <div class="row">
+            <div class="col-md-10">
+                <form class="dl-horizontal">
+                    <br /><br />
+                    <div class="form-group col-md-5 col-md-offset-1">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.i_CorrelativoReclamo)
+                        </dt>
 
-<div>
-    <h4>HojaReclamo</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.i_CorrelativoReclamo)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.i_CorrelativoReclamo)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.i_CorrelativoReclamo)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.d_fechaR)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.d_fechaR)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.d_fechaR)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.d_fechaR)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.i_Parentesco)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.i_Parentesco)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.i_Parentesco)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.i_Parentesco)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.i_Producto)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.i_Producto)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.i_Producto)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.i_Producto)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.i_Servicio)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.i_Servicio)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.i_Servicio)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.i_Servicio)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.v_MontoReclamo)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.v_MontoReclamo)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.v_MontoReclamo)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.v_MontoReclamo)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.v_Descripcion)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.v_Descripcion)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.v_Descripcion)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.v_Descripcion)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.i_Reclamo)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.i_Reclamo)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.i_Reclamo)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.i_Reclamo)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.i_Queja)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.i_Queja)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.i_Queja)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.i_Queja)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.v_Detalle)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.v_Detalle)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.v_Detalle)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.v_Detalle)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.v_Pedido)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.v_Pedido)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.v_Pedido)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.v_Pedido)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.b_FirmaConsumidor)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.b_FirmaConsumidor)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.b_FirmaConsumidor)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.b_FirmaConsumidor)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.d_FechaComunicacionRespuesta)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.d_FechaComunicacionRespuesta)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.d_FechaComunicacionRespuesta)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.d_FechaComunicacionRespuesta)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.b_FirmaProveedor)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.b_FirmaProveedor)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.b_FirmaProveedor)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.b_FirmaProveedor)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.i_IsDeleted)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.i_IsDeleted)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.i_IsDeleted)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.i_IsDeleted)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.i_InsertUserId)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.i_InsertUserId)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.i_InsertUserId)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.i_InsertUserId)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.d_InsertDate)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.d_InsertDate)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.d_InsertDate)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.d_InsertDate)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.i_UpdateUserId)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.i_UpdateUserId)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.i_UpdateUserId)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.i_UpdateUserId)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.d_UpdateDate)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.d_UpdateDate)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.d_UpdateDate)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.d_UpdateDate)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.v_ComentaryRegistros)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.v_ComentaryRegistros)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.v_ComentaryRegistros)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.v_ComentaryRegistros)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.person.v_FirstName)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.person.v_FirstName)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.person.v_FirstName)
+                        </dd>
+                        <br />
+                    </div>
+                    <div class="form-group col-md-5">
 
-        <dd>
-            @Html.DisplayFor(model => model.person.v_FirstName)
-        </dd>
+                        @*<dd>
+                                @if (!string.IsNullOrEmpty(Model.Foto))
+                                {
+                                    <p>
+                                        <a href="@Url.Content(Model.Foto)" download="@Model.Foto">
+                                            <img src="@Url.Content(Model.Foto)" alt="Image" width="200" height="155" class="img-rounded" />
+                                            <span class="glyphicon glyphicon-download-alt" data-toggle="tooltip" data-placement="bottom" title="Descargar Foto"></span>
+                                        </a>
+                                    </p>
+                                }
+                            </dd>
 
-    </dl>
+                            <dd>
+                                @Html.DisplayFor(model => model.CódQR)
+                                <p>
+                                    <a href="/Trabajador/BarcodeImage?barcodeText=@Model.Dni.ToString()" download="/Trabajador/BarcodeImage?barcodeText=@Model.Dni.ToString()">
+                                        <img id="foto" src="/Trabajador/BarcodeImage?barcodeText=@Model.Dni.ToString()" width="200" height="200" />
+                                        <span class="glyphicon glyphicon-download-alt" data-toggle="tooltip" data-placement="bottom" title="Descargar QR"></span>
+                                    </a>
+                                </p>
+                            </dd>*@
+                    </div>
+                </form>
+            </div>
+            <div class="container col-md-offset-1">
+                <div class="col-ms-6">
+                    <a href="~/HojaReclamoes/Index" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Cerrar.">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="col-ms-6">
+                    @*<a href="~/Trabajador/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Editar!">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                        </a>*@
+                </div>
+                @*<div class="col-md-2 col-md-offset-3">
+                        <a href="~/Trabajador/index" class="btn btn-info">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Volver
+                        </a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="~/Trabajador/Edit/@Html.DisplayFor(model => model.Id)" class="btn btn-warning">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Editar
+                        </a>
+                    </div>*@
+            </div>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.v_IdHojaReclamo }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<div class="col-md-6 col-md-offset-5">
+    <a href="javascript:genPDF(Imprimir)" style="color: aqua">
+        Descargar PDF
+    </a>
+</div>
+
+@*<div>
+        <h4>HojaReclamo</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.i_CorrelativoReclamo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.i_CorrelativoReclamo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.d_fechaR)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.d_fechaR)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.i_Parentesco)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.i_Parentesco)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.i_Producto)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.i_Producto)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.i_Servicio)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.i_Servicio)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.v_MontoReclamo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.v_MontoReclamo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.v_Descripcion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.v_Descripcion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.i_Reclamo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.i_Reclamo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.i_Queja)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.i_Queja)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.v_Detalle)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.v_Detalle)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.v_Pedido)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.v_Pedido)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.b_FirmaConsumidor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.b_FirmaConsumidor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.d_FechaComunicacionRespuesta)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.d_FechaComunicacionRespuesta)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.b_FirmaProveedor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.b_FirmaProveedor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.i_IsDeleted)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.i_IsDeleted)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.i_InsertUserId)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.i_InsertUserId)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.d_InsertDate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.d_InsertDate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.i_UpdateUserId)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.i_UpdateUserId)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.d_UpdateDate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.d_UpdateDate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.v_ComentaryRegistros)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.v_ComentaryRegistros)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.person.v_FirstName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.person.v_FirstName)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.v_IdHojaReclamo }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@
