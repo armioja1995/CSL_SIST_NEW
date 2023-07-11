@@ -40,8 +40,6 @@ namespace SVPWeb.Controllers
         {
             //ViewBag.v_IdPaciente = new SelectList(db.person, "v_PersonId", "v_FirstName");
 
-            //ViewBag.IdTrabajador = _Person.AllPerson();
-
             return View("Create");
         }
 
@@ -50,82 +48,83 @@ namespace SVPWeb.Controllers
         {
             //validator.Execute(justificacionTra);
             //validator.errors.ToList().ForEach(x => ModelState.AddModelError(x.Key, x.Value));
-            //if (ModelState.IsValid)
-            //{
-            _HojaReclamo.AddHojaReclamo(hojaReclamo);
-            TempData["UpdateSuccess"] = "Se Guardó Correctamente";
+            if (ModelState.IsValid)
+            {
+                _HojaReclamo.AddHojaReclamo(hojaReclamo);
+                TempData["UpdateSuccess"] = "Se Guardó Correctamente";
 
-            //if (justificacionTra.DocumentoFile != null)
-            //{
-            //    var folderCV = "~/Content/Just-Trabajadores";
-            //    var fileCV = string.Format("{0}.pdf", "Justificación-" + hojaReclamo.Motivo);
-            //    var responseCV = FileHelpers.UploadDoc(hojaReclamo.DocumentoFile, folderCV, fileCV);
-            //    if (responseCV)
-            //    {
-            //        var picCV = string.Format("{0}/{1}", folderCV, fileCV);
-            //         hojaReclamo.Documento = picCV;
+                //if (justificacionTra.DocumentoFile != null)
+                //{
+                //    var folderCV = "~/Content/Just-Trabajadores";
+                //    var fileCV = string.Format("{0}.pdf", "Justificación-" + hojaReclamo.Motivo);
+                //    var responseCV = FileHelpers.UploadDoc(hojaReclamo.DocumentoFile, folderCV, fileCV);
+                //    if (responseCV)
+                //    {
+                //        var picCV = string.Format("{0}/{1}", folderCV, fileCV);
+                //        hojaReclamo.Documento = picCV;
 
-            //    _HojaReclamo.UpdateJustificacionTra(hojaReclamo);
-            //    }
-            //}
-            return RedirectToAction("Index");
-            //}
+                //        _HojaReclamo.UpdateJustificacionTra(hojaReclamo);
+                //    }
+                //}
+                return RedirectToAction("Index");
+            }
 
-            //ViewBag.IdTrabajador = intrabajador.AllTrabajador();
-            //return View("Create", justificacionTra);
+            ViewBag.IdTrabajador = _HojaReclamo.AllHojaReclamo();
+            return View("Create", hojaReclamo);
         }
 
-        //public ActionResult Edit(string id)
-        //{
-        //    ViewBag.trabajador = intrabajador.AllTrabajador();
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    var data = repository.FindJustificacionTra(id);
-        //    if (data == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View("Edit", data);
-        //}
+        public ActionResult Edit(string id)
+        {
+            //ViewBag.trabajador = _HojaReclamo.AllHojaReclamo();
+            //if (id == null)
+            //{
+            //    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            //}
+            var data = _HojaReclamo.FindHojaReclamo(id);
+            if (data == null)
+            {
+                return HttpNotFound();
+            }
+            return View("Edit", data);
+        }
 
-        //[HttpPost]
-        //public ActionResult Edit(JustificacionTra justificacionTra)
-        //{
-        //    validator.Execute(justificacionTra);
-        //    validator.errors.ToList().ForEach(x => ModelState.AddModelError(x.Key, x.Value));
+        [HttpPost]
+        public ActionResult Edit(HojaReclamo HojaReclamoObj)
+        {
+            //validator.Execute(justificacionTra);
+            //validator.errors.ToList().ForEach(x => ModelState.AddModelError(x.Key, x.Value));
 
-        //    if (ModelState.IsValid)
-        //    {
-        //        if (justificacionTra.DocumentoFile != null)
-        //        {
-        //            var folderCV = "~/Content/Just-Trabajadores";
-        //            var fileCV = string.Format("{0}.pdf", "Justificación-" + justificacionTra.Motivo);
-        //            var responseCV = FileHelpers.UploadDoc(justificacionTra.DocumentoFile, folderCV, fileCV);
-        //            if (responseCV)
-        //            {
-        //                var picCV = string.Format("{0}/{1}", folderCV, fileCV);
-        //                justificacionTra.Documento = picCV;
+            if (ModelState.IsValid)
+            {
+                //if (justificacionTra.DocumentoFile != null)
+                //{
+                //    var folderCV = "~/Content/Just-Trabajadores";
+                //    var fileCV = string.Format("{0}.pdf", "Justificación-" + justificacionTra.Motivo);
+                //    var responseCV = FileHelpers.UploadDoc(justificacionTra.DocumentoFile, folderCV, fileCV);
+                //    if (responseCV)
+                //    {
+                //        var picCV = string.Format("{0}/{1}", folderCV, fileCV);
+                //        justificacionTra.Documento = picCV;
 
-        //            }
-        //        }
-        //        repository.UpdateJustificacionTra(justificacionTra);
-        //        TempData["UpdateSuccess"] = "Se actualizó correctamente";
-        //        return RedirectToAction("Index");
-        //    }
-        //    ViewBag.IdTrabajador = _Person.AllPerson();
-        //    var data = _HojaReclamo.FindHojaReclamo(justificacionTra.Id);
-        //    return View("Edit", data);
-        //}
+                //    }
+                //}
+                _HojaReclamo.UpdateHojaReclamo(HojaReclamoObj);
+                TempData["UpdateSuccess"] = "Se actualizó correctamente";
+                return RedirectToAction("Index");
+            }
 
-        //public ActionResult Delete(string id)
-        //{
-        //    var user = _HojaReclamo.FindHojaReclamo(id);
-        //    _HojaReclamo.DeleteJustificacionTra(id);
-        //    TempData["UpdateSuccess"] = "Se eliminó correctamente";
-        //    return RedirectToAction("Index");
-        //}
+            ViewBag.IdTrabajador = _Person.AllPerson();
+            var data = _HojaReclamo.FindHojaReclamo(HojaReclamoObj.v_IdHojaReclamo);
+            return View("Edit", data);
+        }
+
+        public ActionResult Delete(string id)
+        {
+            var user = _HojaReclamo.FindHojaReclamo(id);
+            _HojaReclamo.DeleteHojaReclamo(id);
+            TempData["UpdateSuccess"] = "Se eliminó correctamente";
+            return RedirectToAction("Index");
+        }
 
         public ActionResult SelectPersona(string dni)
         {

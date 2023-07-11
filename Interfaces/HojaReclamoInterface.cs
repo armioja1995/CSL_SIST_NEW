@@ -12,9 +12,9 @@ namespace Interfaces
     {
         void AddHojaReclamo(HojaReclamo _hojaReclamo);
 
-        void UpdateAlumno(HojaReclamo _hojaReclamo);
+        void UpdateHojaReclamo(HojaReclamo _hojaReclamo);
 
-        void DeleteAlumno(string _hojaReclamoid);
+        void DeleteHojaReclamo(string _hojaReclamoid);
 
         List<HojaReclamoList> AllHojaReclamo();
 

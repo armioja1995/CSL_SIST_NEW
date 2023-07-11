@@ -124,13 +124,37 @@ namespace SVPRepository
             return dbQuery.ToList();
         }
 
-        public void DeleteAlumno(string _hojaReclamoid)
+        public void DeleteHojaReclamo(string _hojaReclamoid)
         {
             var existe = entidad.HojaReclamo.Find(_hojaReclamoid);
             if (existe != null)
             {
-                entidad.HojaReclamo.Remove(existe);
+                existe.d_UpdateDate = DateTime.Now;
+                existe.i_UpdateUserId = 11;
+
+                existe.i_IsDeleted = 1;
+                existe.v_ComentaryRegistros = existe.v_ComentaryRegistros
+                                                    + "[" + existe.i_CorrelativoReclamo.ToString()
+                                                    + "; " + existe.d_fechaR.ToString()
+                                                    + "; " + existe.i_Parentesco.ToString()
+                                                    + "; " + existe.i_Producto.ToString()
+                                                    + "; " + existe.i_Servicio.ToString()
+                                                    + "; " + existe.v_MontoReclamo.ToString()
+                                                    + "; " + existe.i_Reclamo.ToString()
+                                                    + "; " + existe.i_Queja.ToString()
+                                                    + "; " + existe.v_Detalle.ToString()
+                                                    + "; " + existe.v_Pedido.ToString()
+                                                    + "; " + existe.d_FechaComunicacionRespuesta.ToString()
+                                                    + "; " + existe.i_IsDeleted.ToString()
+                                                    + "; " + existe.d_InsertDate.ToString()
+                                                    + "; " + existe.i_UpdateUserId.ToString()
+                                                    + "; " + existe.d_UpdateDate.ToString()
+                                                    + "]";
+
+                entidad.Entry(existe).State = EntityState.Modified;
                 entidad.SaveChanges();
+                //entidad.HojaReclamo.Remove(existe);
+                //entidad.SaveChanges();
             }
         }
 
@@ -144,10 +168,34 @@ namespace SVPRepository
             return result;
         }
 
-        public void UpdateAlumno(HojaReclamo _hojaReclamo)
+        public void UpdateHojaReclamo(HojaReclamo _hojaReclamo)
         {
+            _hojaReclamo.d_UpdateDate = DateTime.Now;
+            _hojaReclamo.i_UpdateUserId = 11;
+
+            _hojaReclamo.i_IsDeleted = 0;
+            _hojaReclamo.v_ComentaryRegistros = _hojaReclamo.v_ComentaryRegistros 
+                                                + "[" + _hojaReclamo.i_CorrelativoReclamo.ToString() 
+                                                + "; " + _hojaReclamo.d_fechaR.ToString()
+                                                + "; " + _hojaReclamo.i_Parentesco.ToString()
+                                                + "; " + _hojaReclamo.i_Producto.ToString()
+                                                + "; " + _hojaReclamo.i_Servicio.ToString()
+                                                + "; " + _hojaReclamo.v_MontoReclamo.ToString()
+                                                + "; " + _hojaReclamo.i_Reclamo.ToString()
+                                                + "; " + _hojaReclamo.i_Queja.ToString()
+                                                + "; " + _hojaReclamo.v_Detalle.ToString()
+                                                + "; " + _hojaReclamo.v_Pedido.ToString()
+                                                + "; " + _hojaReclamo.d_FechaComunicacionRespuesta.ToString()
+                                                + "; " + _hojaReclamo.i_IsDeleted.ToString()
+                                                + "; " + _hojaReclamo.d_InsertDate.ToString()
+                                                + "; " + _hojaReclamo.i_UpdateUserId.ToString()
+                                                + "; " + _hojaReclamo.d_UpdateDate.ToString()
+                                                + "]";
+
             entidad.Entry(_hojaReclamo).State = EntityState.Modified;
             entidad.SaveChanges();
+
+
         }
 
         
