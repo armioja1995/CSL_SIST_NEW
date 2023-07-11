@@ -9765,5 +9765,35 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ListadoHojaReclamoAll_SP" FunctionName="SigesoftDesarrollo_2Model.Store.ListadoHojaReclamoAll_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SigesoftDesarrollo_2Model.ListadoHojaReclamoAll_SP_Result">
+          <ScalarProperty Name="v_IdHojaReclamo" ColumnName="v_IdHojaReclamo" />
+          <ScalarProperty Name="i_CorrelativoReclamo" ColumnName="i_CorrelativoReclamo" />
+          <ScalarProperty Name="d_fechaR" ColumnName="d_fechaR" />
+          <ScalarProperty Name="v_IdPaciente" ColumnName="v_IdPaciente" />
+          <ScalarProperty Name="Paciente" ColumnName="Paciente" />
+          <ScalarProperty Name="i_Producto" ColumnName="i_Producto" />
+          <ScalarProperty Name="i_Servicio" ColumnName="i_Servicio" />
+          <ScalarProperty Name="Prod_Serv" ColumnName="Prod_Serv" />
+          <ScalarProperty Name="v_MontoReclamo" ColumnName="v_MontoReclamo" />
+          <ScalarProperty Name="v_Descripcion" ColumnName="v_Descripcion" />
+          <ScalarProperty Name="v_Pedido" ColumnName="v_Pedido" />
+          <ScalarProperty Name="b_FirmaConsumidor" ColumnName="b_FirmaConsumidor" />
+          <ScalarProperty Name="d_FechaComunicacionRespuesta" ColumnName="d_FechaComunicacionRespuesta" />
+          <ScalarProperty Name="b_FirmaProveedor" ColumnName="b_FirmaProveedor" />
+          <ScalarProperty Name="i_IsDeleted" ColumnName="i_IsDeleted" />
+          <ScalarProperty Name="i_InsertUserId" ColumnName="i_InsertUserId" />
+          <ScalarProperty Name="UsuarioRegistro" ColumnName="UsuarioRegistro" />
+          <ScalarProperty Name="d_InsertDate" ColumnName="d_InsertDate" />
+          <ScalarProperty Name="UsuarioEdita" ColumnName="UsuarioEdita" />
+          <ScalarProperty Name="d_UpdateDate" ColumnName="d_UpdateDate" />
+          <ScalarProperty Name="v_ComentaryRegistros" ColumnName="v_ComentaryRegistros" />
+          <ScalarProperty Name="i_Queja" ColumnName="i_Queja" />
+          <ScalarProperty Name="i_Reclamo" ColumnName="i_Reclamo" />
+          <ScalarProperty Name="Quej_Recl" ColumnName="Quej_Recl" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

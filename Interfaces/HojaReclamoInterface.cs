@@ -1,4 +1,5 @@
 ﻿using SVPDomain;
+using SVPDomain.ClasesNew;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +16,9 @@ namespace Interfaces
 
         void DeleteAlumno(string _hojaReclamoid);
 
-        List<HojaReclamo> AllHojaReclamo();
+        List<HojaReclamoList> AllHojaReclamo();
 
-        List<HojaReclamo> ByQueryAll(string query, DateTime? fecha1, DateTime? fecha2);
+        List<HojaReclamoList> ByQueryAll(string query, DateTime? fecha1, DateTime? fecha2);
 
         HojaReclamo FindHojaReclamo(string id);
     }

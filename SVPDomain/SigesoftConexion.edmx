@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SigesoftDesarrollo_2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SigesoftDesarrollo_2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="additionalexam">
           <Key>
             <PropertyRef Name="v_AdditionalExamId" />
@@ -6537,6 +6537,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
         <Function Name="isObservado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="serviceId" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="ListadoHojaReclamoAll_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="ListCalendarHorarioSambhs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="anio" Type="int" Mode="In" />
           <Parameter Name="mes" Type="int" Mode="In" />
@@ -7621,8 +7622,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <End Role="servicecomponentfieldValuesmultimedia" EntitySet="servicecomponentfieldValuesmultimedia" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SigesoftDesarrollo_2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -13963,16 +13963,16 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="AdminId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="AntecedentesmEDICOS_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.AntecedentesmEDICOS_SP_Result)">
-            <Parameter Name="v_PersonId" Mode="In" Type="String" />
+          <Parameter Name="v_PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="AntecedentesOcupacionales_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.AntecedentesOcupacionales_SP_Result)">
-            <Parameter Name="v_PersonId" Mode="In" Type="String" />
+          <Parameter Name="v_PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="BuscarDistritos_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.BuscarDistritos_SP_Result)">
-            <Parameter Name="text" Mode="In" Type="String" />
+          <Parameter Name="text" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="BuscarHospitalizacionHabitaciones" ReturnType="Collection(SigesoftDesarrollo_2Model.BuscarHospitalizacionHabitaciones_Result)">
-            <Parameter Name="hospitalizacionId" Mode="In" Type="String" />
+          <Parameter Name="hospitalizacionId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="BuscarProtocoloPropuesto_SP" ReturnType="Collection(String)">
             <Parameter Name="organizationEmployerId" Mode="In" Type="String" />
@@ -13982,13 +13982,13 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="esoTypeId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="BuscarServiciosHospitalizacion_1" ReturnType="Collection(SigesoftDesarrollo_2Model.BuscarServiciosHospitalizacion_1_Result)">
-            <Parameter Name="hospitalizacionId" Mode="In" Type="String" />
+          <Parameter Name="hospitalizacionId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="BuscarTickets_1" ReturnType="Collection(SigesoftDesarrollo_2Model.BuscarTickets_1_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="BuscarTicketsDetalle_1" ReturnType="Collection(SigesoftDesarrollo_2Model.BuscarTicketsDetalle_1_Result)">
-            <Parameter Name="v_TicketId" Mode="In" Type="String" />
+          <Parameter Name="v_TicketId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ConcatenateComponents_SP" ReturnType="Collection(String)">
             <Parameter Name="v_ServiceId" Mode="In" Type="String" />
@@ -14003,34 +14003,34 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="createReportFreeOcupacional">
-            <Parameter Name="name" Mode="In" Type="String" />
+          <Parameter Name="name" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="createReportFreeParticular">
-            <Parameter Name="name" Mode="In" Type="String" />
+          <Parameter Name="name" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="deleteReportFreeOcupacional">
-            <Parameter Name="reportName" Mode="In" Type="String" />
+          <Parameter Name="reportName" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="deleteReportFreeParticular">
-            <Parameter Name="reportName" Mode="In" Type="String" />
+          <Parameter Name="reportName" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverComponentesConcatenados_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverDatosPaciente_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.DevolverDatosPaciente_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverHabitos_Personales_ListaAntecedentesFamiliares_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.DevolverHabitos_Personales_ListaAntecedentesFamiliares_SP_Result)">
-            <Parameter Name="v_PersonsIds" Mode="In" Type="String" />
+          <Parameter Name="v_PersonsIds" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverHabitos_Personales_ListaHabitosNoxivos_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.DevolverHabitos_Personales_ListaHabitosNoxivos_SP_Result)">
-            <Parameter Name="v_PersonsIds" Mode="In" Type="String" />
+          <Parameter Name="v_PersonsIds" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverHabitos_Personales_ListaJerarquizada_SP" ReturnType="Collection(String)">
-            <Parameter Name="v_PersonsIds" Mode="In" Type="String" />
+          <Parameter Name="v_PersonsIds" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverHabitos_Personales_ListaMedicosPersonales_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.DevolverHabitos_Personales_ListaMedicosPersonales_SP_Result)">
-            <Parameter Name="v_PersonsIds" Mode="In" Type="String" />
+          <Parameter Name="v_PersonsIds" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverProductos">
             <Parameter Name="Nombre" Mode="In" Type="String" />
@@ -14038,10 +14038,10 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="RolId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="DevolverValorCampoPorServicioMejorado_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.DevolverValorCampoPorServicioMejorado_SP_Result)">
-            <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
+          <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverValorCampoPorServicioMejoradoUnServicio_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.DevolverValorCampoPorServicioMejoradoUnServicio_SP_Result)">
-            <Parameter Name="v_ServiciosId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiciosId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverValoresComponente">
             <Parameter Name="FechaInicio" Mode="In" Type="DateTime" />
@@ -14049,10 +14049,10 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="CategoryId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="DevolverValoresEkgHudbay_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.DevolverValoresEkgHudbay_SP_Result)">
-            <Parameter Name="v_ServiciosId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiciosId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="DevolverValoresSTSHudbay_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.DevolverValoresSTSHudbay_SP_Result)">
-            <Parameter Name="v_ServiciosId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiciosId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ExamenByDefaultOrAssigned_comFields_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ExamenByDefaultOrAssigned_comFields_SP_Result)">
             <Parameter Name="v_ServiceId" Mode="In" Type="String" />
@@ -14075,13 +14075,13 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="v_ComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="existeReportFreeOcupacional" ReturnType="Collection(Int32)">
-            <Parameter Name="name" Mode="In" Type="String" />
+          <Parameter Name="name" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="existeReportFreeParticular" ReturnType="Collection(Int32)">
-            <Parameter Name="name" Mode="In" Type="String" />
+          <Parameter Name="name" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="existUser" ReturnType="Collection(String)">
-            <Parameter Name="docIdentity" Mode="In" Type="String" />
+          <Parameter Name="docIdentity" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="existUserForAdmin" ReturnType="Collection(String)">
             <Parameter Name="AdminId" Mode="In" Type="String" />
@@ -14170,7 +14170,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="roleId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetAllPuestos_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAllPuestos_SP_Result)">
-            <Parameter Name="pstrPacientId" Mode="In" Type="String" />
+          <Parameter Name="pstrPacientId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAlturaEstructural_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAlturaEstructural_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
@@ -14182,31 +14182,31 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="p2" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAntecedentConsolidateForService1_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAntecedentConsolidateForService1_SP_Result)">
-            <Parameter Name="v_PersonId" Mode="In" Type="String" />
+          <Parameter Name="v_PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAntecedentConsolidateForService2_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAntecedentConsolidateForService2_SP_Result)">
-            <Parameter Name="v_PersonId" Mode="In" Type="String" />
+          <Parameter Name="v_PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAntecedentConsolidateForService3_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAntecedentConsolidateForService3_SP_Result)">
-            <Parameter Name="v_PersonId" Mode="In" Type="String" />
+          <Parameter Name="v_PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAntecedentConsolidateForService4_SP_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAntecedentConsolidateForService4_SP_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAptitudeCertificateRefact_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAptitudeCertificateRefact_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAptitudeCertificateRefactNew_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAptitudeCertificateRefactNew_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAptitudeCertificateRefactNew2_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAptitudeCertificateRefactNew2_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAptitudeCertificateRefactNew3_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAptitudeCertificateRefactNew3_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAptitudMedicoServicio_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAptitudMedicoServicio_SP_Result)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetAudiometriaCoimolache_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetAudiometriaCoimolache_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
@@ -14217,105 +14217,105 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetCAPC_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetCAPC_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetCAPE_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetCAPE_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetCAPSD_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetCAPSD_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetCAPSM_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetCAPSM_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetCarneVacuna_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetCarneVacuna_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getCategoriaExamenFaltanteESO_SP" ReturnType="Collection(String)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getComponentsExist" ReturnType="Collection(SigesoftDesarrollo_2Model.getComponentsExist_Result)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getComponetsDownload" ReturnType="Collection(SigesoftDesarrollo_2Model.getComponetsDownload_Result)">
             <Parameter Name="serviceId" Mode="In" Type="String" />
             <Parameter Name="componentDownloadId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateEpps_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrHistoryId" Mode="In" Type="String" />
+          <Parameter Name="pstrHistoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateExposiciones_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrHistoryId" Mode="In" Type="String" />
+          <Parameter Name="pstrHistoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenatenoxioushabits_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetConcatenatenoxioushabits_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateRecommendation_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrDiagnosticRepositoryId" Mode="In" Type="String" />
+          <Parameter Name="pstrDiagnosticRepositoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateRecommendationByService_New_2_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateRecommendationByService_New_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateRecommendationByService_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateRestriction_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrDiagnosticRepositoryId" Mode="In" Type="String" />
+          <Parameter Name="pstrDiagnosticRepositoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateRestrictionByServiceConcatecDx_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateTypeOfeep_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrHistoryId" Mode="In" Type="String" />
+          <Parameter Name="pstrHistoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetConcatenateWorkStationDangers_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrHistoryId" Mode="In" Type="String" />
+          <Parameter Name="pstrHistoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetCustionarioAudiometria_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetCustionarioAudiometria_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetDataHierarchyForCombo_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDataHierarchyForCombo_SP_Result)">
-            <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
+          <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetDataHierarchyForComboDepartamento_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDataHierarchyForComboDepartamento_SP_Result)">
-            <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
+          <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetDataHierarchyForComboDistrito_1_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDataHierarchyForComboDistrito_1_SP_Result)">
-            <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
+          <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetDataHierarchyForComboProvincia_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDataHierarchyForComboProvincia_SP_Result)">
             <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
             <Parameter Name="pintParentItemId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetDataOrganizationId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDataOrganizationId_SP_Result)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetDatosProtocolo_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDatosProtocolo_SP_Result)">
-            <Parameter Name="pProtocoloId" Mode="In" Type="String" />
+          <Parameter Name="pProtocoloId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetDatosTrabajador_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDatosTrabajador_SP_Result)">
-            <Parameter Name="v_docNumbre" Mode="In" Type="String" />
+          <Parameter Name="v_docNumbre" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getDetailCompletepurchase" ReturnType="Collection(Int32)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetDevolverAntecedentesPersonales_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDevolverAntecedentesPersonales_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetDevolverAptitud_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetDevolverComponentesLaboratorioConcatenados_SP" ReturnType="Collection(String)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
             <Parameter Name="INFORME_LABORATORIO_ID" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetDevolverDatosUsuarioFirma_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDevolverDatosUsuarioFirma_SP_Result)">
-            <Parameter Name="systemuserId" Mode="In" Type="String" />
+          <Parameter Name="systemuserId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetDevolverDatosUsuarioGraboExamen_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDevolverDatosUsuarioGraboExamen_SP_Result)">
             <Parameter Name="pstrserviceId" Mode="In" Type="String" />
@@ -14380,26 +14380,26 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
           </FunctionImport>
           <FunctionImport Name="GetDxFrecuentes_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetDxFrecuentes_SP_Result)" />
           <FunctionImport Name="getEdadPerson" ReturnType="Collection(Int32)">
-            <Parameter Name="personId" Mode="In" Type="String" />
+          <Parameter Name="personId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetEmbarazoFiltered_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetEmbarazoFiltered_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetFamilyMedicalAntecedentsPagedAndFilteredByPersonId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetFamilyMedicalAntecedentsPagedAndFilteredByPersonId_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetFamilyMedicalAntecedentsReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetFamilyMedicalAntecedentsReport_SP_Result)">
-            <Parameter Name="v_PersonId" Mode="In" Type="String" />
+          <Parameter Name="v_PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetFichaPsicologicaOcupacional_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetFichaPsicologicaOcupacional_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getFile" ReturnType="Collection(SigesoftDesarrollo_2Model.getFile_Result)">
             <Parameter Name="serviceId" Mode="In" Type="String" />
             <Parameter Name="componentName" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetFirmaMedicos_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetFirmaMedicos_SP_Result)">
-            <Parameter Name="medicoID" Mode="In" Type="Int32" />
+          <Parameter Name="medicoID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetFormAction_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetFormAction_SP_Result)">
             <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
@@ -14408,38 +14408,38 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="pstrFormCode" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getFototipo_SP" ReturnType="Collection(Binary)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHistoriaClinicaPsicologica_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHistoriaClinicaPsicologica_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHistoryPagedAndFiltered_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHistoryPagedAndFiltered_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHistoryReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHistoryReport_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHistoryReportA_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHistoryReportA_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHistoryReportB_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHistoryReportB_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHospitalizacionCheckList_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHospitalizacionCheckList_SP_Result)">
-            <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
+          <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHospitalizacionEpicrisisforHospitalizacionId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHospitalizacionEpicrisisforHospitalizacionId_SP_Result)">
-            <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
+          <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHospitalizacionIndicacionesMedicasId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHospitalizacionIndicacionesMedicasId_SP_Result)">
-            <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
+          <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHospitalizacionNotasEnfHospitalizacionId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHospitalizacionNotasEnfHospitalizacionId_SP_Result)">
-            <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
+          <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHospitalizacionNotasMedHospitalizacionId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHospitalizacionNotasMedHospitalizacionId_SP_Result)">
-            <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
+          <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetHospitalizacionPagedAndFiltered_1" ReturnType="Collection(SigesoftDesarrollo_2Model.GetHospitalizacionPagedAndFiltered_1_Result)">
             <Parameter Name="FechaInicio" Mode="In" Type="DateTime" />
@@ -14450,27 +14450,27 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="FechaFin" Mode="In" Type="DateTime" />
           </FunctionImport>
           <FunctionImport Name="getImagePerson" ReturnType="Collection(Binary)">
-            <Parameter Name="personId" Mode="In" Type="String" />
+          <Parameter Name="personId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetInfoMedicalCenter_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetInfoMedicalCenter_SP_Result)">
-            <Parameter Name="OWNER_ORGNIZATION_ID" Mode="In" Type="String" />
+          <Parameter Name="OWNER_ORGNIZATION_ID" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getInfoPayment" ReturnType="Collection(SigesoftDesarrollo_2Model.getInfoPayment_Result)">
             <Parameter Name="serviceId" Mode="In" Type="String" />
             <Parameter Name="componentName" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getInfoPerson" ReturnType="Collection(SigesoftDesarrollo_2Model.getInfoPerson_Result)">
-            <Parameter Name="docIdentity" Mode="In" Type="String" />
+          <Parameter Name="docIdentity" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getInfoPersonForAdmin" ReturnType="Collection(SigesoftDesarrollo_2Model.getInfoPersonForAdmin_Result)">
             <Parameter Name="docIdentity" Mode="In" Type="String" />
             <Parameter Name="adminId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetInformacion_Laboratorio_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetInformacion_Laboratorio_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetInformacion_OtrosExamenes_New_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetInformacion_OtrosExamenes_New_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetInformacion_OtrosExamenes_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetInformacion_OtrosExamenes_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
@@ -14487,23 +14487,23 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="p10" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetInformacionProtocoloCompletoAsService_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetInformacionProtocoloCompletoAsService_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetInformacionProtocoloservicio_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetInformacionProtocoloservicio_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getInfoUserclient" ReturnType="Collection(SigesoftDesarrollo_2Model.getInfoUserclient_Result)">
             <Parameter Name="serviceId" Mode="In" Type="String" />
             <Parameter Name="componentName" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetJoinOrganizationAndLocation_List_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetJoinOrganizationAndLocation_List_SP_Result)">
-            <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
+          <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetJoinOrganizationAndLocation_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetJoinOrganizationAndLocation_SP_Result)">
-            <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
+          <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetListaAtencionesParaHistoria_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetListaAtencionesParaHistoria_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetListRecommendationByServiceIdAndComponent_SP" ReturnType="Collection(String)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
@@ -14521,32 +14521,32 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
           <FunctionImport Name="getListUsers" ReturnType="Collection(SigesoftDesarrollo_2Model.getListUsers_Result)" />
           <FunctionImport Name="getListUsersForAdmin" ReturnType="Collection(SigesoftDesarrollo_2Model.getListUsersForAdmin_Result)" />
           <FunctionImport Name="GetListValueComponent_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetListValueComponent_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetMedicoRefiereExamLaboratorio_SP" ReturnType="Collection(String)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetMusculoEsqueletico_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetMusculoEsqueletico_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetNombreEmpresaLab_SP" ReturnType="Collection(String)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetNombreGrabaAptitud_SP" ReturnType="Collection(String)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetNombreMedicoLab_SP" ReturnType="Collection(String)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetNoxiousHabitsPagedAndFilteredByPersonId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetNoxiousHabitsPagedAndFilteredByPersonId_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetNoxiousHabitsReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetNoxiousHabitsReport_SP_Result)">
-            <Parameter Name="v_PersonId" Mode="In" Type="String" />
+          <Parameter Name="v_PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetObtenerFechasCuidadosPreventivos__SP" ReturnType="Collection(DateTime)">
-            <Parameter Name="PersonId" Mode="In" Type="String" />
+          <Parameter Name="PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetObtenerFirmaMedico_2_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetObtenerFirmaMedico_2_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
@@ -14567,13 +14567,13 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="p2" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetObtenerUsuarioAnterior_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetObtenerUsuarioAnterior_SP_Result)">
-            <Parameter Name="v_ServiceComponentId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getOrdenReporte" ReturnType="Collection(SigesoftDesarrollo_2Model.getOrdenReporte_Result)">
-            <Parameter Name="organizationId" Mode="In" Type="String" />
+          <Parameter Name="organizationId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetOrganizationFacturacion_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetOrganizationFacturacion_SP_Result)">
-            <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
+          <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="getOrSetRequestComponents" ReturnType="Collection(SigesoftDesarrollo_2Model.getOrSetRequestComponents_Result)">
             <Parameter Name="status" Mode="In" Type="Int32" />
@@ -14586,13 +14586,13 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="pstNroDocument" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPacientReportEPS_NewOrganizationId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPacientReportEPS_NewOrganizationId_SP_Result)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPacientReportEPS_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPacientReportEPS_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPacientReportEPSFirmaMedicoOcupacional_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPacientReportEPSFirmaMedicoOcupacional_SP_Result)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPacientsPagedAndFiltered_Apellidos_Nombre_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPacientsPagedAndFiltered_Apellidos_Nombre_SP_Result)">
             <Parameter Name="apPat" Mode="In" Type="String" />
@@ -14604,17 +14604,17 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="apMat" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPacientsPagedAndFiltered_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPacientsPagedAndFiltered_SP_Result)">
-            <Parameter Name="pstrFirstLastNameorDocNumber" Mode="In" Type="String" />
+          <Parameter Name="pstrFirstLastNameorDocNumber" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPacientsPagedAndFilteredByPErsonId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPacientsPagedAndFilteredByPErsonId_SP_Result)">
-            <Parameter Name="pstrPErsonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPErsonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetParentNameSystemParameter_SP" ReturnType="Collection(String)">
             <Parameter Name="pintParameterId" Mode="In" Type="Int32" />
             <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetParentNameSystemParameter2_SP" ReturnType="Collection(String)">
-            <Parameter Name="pintParameterId" Mode="In" Type="Int32" />
+          <Parameter Name="pintParameterId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="getPassOLD" ReturnType="Collection(String)">
             <Parameter Name="personId" Mode="In" Type="String" />
@@ -14622,25 +14622,25 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="userId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPersonMedicalHistoryPagedAndFilteredByPersonId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPersonMedicalHistoryPagedAndFilteredByPersonId_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPersonMedicalHistoryPagedAndFilteredByPersonId1_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPersonMedicalHistoryPagedAndFilteredByPersonId1_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPersonMedicalHistoryReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPersonMedicalHistoryReport_SP_Result)">
-            <Parameter Name="v_PersonId" Mode="In" Type="String" />
+          <Parameter Name="v_PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetPlanIntegralAndFiltered_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetPlanIntegralAndFiltered_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetProblemaPagedAndFiltered_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetProblemaPagedAndFiltered_SP_Result)">
-            <Parameter Name="pstrPersonId" Mode="In" Type="String" />
+          <Parameter Name="pstrPersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetProtocolComponents_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetProtocolComponents_SP_Result)">
-            <Parameter Name="pstrProtocolId" Mode="In" Type="String" />
+          <Parameter Name="pstrProtocolId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetProtocolComponentsList_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetProtocolComponentsList_SP_Result)">
-            <Parameter Name="pstrProtocolId" Mode="In" Type="String" />
+          <Parameter Name="pstrProtocolId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetProtocolPagedAndFiltered_FILT_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetProtocolPagedAndFiltered_FILT_SP_Result)">
             <Parameter Name="txtProtocolName" Mode="In" Type="String" />
@@ -14664,7 +14664,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="v_DiagnosticRepositoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetRecetaToReportConsolidado_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetRecetaToReportConsolidado_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetRecomendationByServiceIdAndComponentConcatec_SP" ReturnType="Collection(String)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
@@ -14691,7 +14691,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetReportConsentimiento_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetReportConsentimiento_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetReportCuestionarioEspirometria_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetReportCuestionarioEspirometria_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
@@ -14758,7 +14758,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetReportHistoriaOcupacional_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetReportHistoriaOcupacional_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetReportInformeRadiografico_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetReportInformeRadiografico_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
@@ -14795,7 +14795,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetRestrictionByServiceId_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getRestrictions" ReturnType="Collection(SigesoftDesarrollo_2Model.getRestrictions_Result)">
             <Parameter Name="personId" Mode="In" Type="String" />
@@ -14809,29 +14809,29 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
           <FunctionImport Name="getRouteObservaciones" ReturnType="Collection(String)" />
           <FunctionImport Name="getRouteReportMedic" ReturnType="Collection(String)" />
           <FunctionImport Name="GetSelectedIndexChanged_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetSelectedIndexChanged_SP_Result)">
-            <Parameter Name="v_serviceId" Mode="In" Type="String" />
+          <Parameter Name="v_serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceByHospForCombo_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceByHospForCombo_SP_Result)">
-            <Parameter Name="v_HospId" Mode="In" Type="String" />
+          <Parameter Name="v_HospId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceByPersonForCombo_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceByPersonForCombo_SP_Result)">
-            <Parameter Name="v_PersonId" Mode="In" Type="String" />
+          <Parameter Name="v_PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentConclusionesDxServiceId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentConclusionesDxServiceId_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentConclusionesDxServiceIdReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentConclusionesDxServiceIdReport_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentConclusionesDxServiceIdReport_TODOS_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentConclusionesDxServiceIdReport_TODOS_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentDiagnosticsReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentDiagnosticsReport_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentDisgnosticsByServiceId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentDisgnosticsByServiceId_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentDisgnosticsForGridView_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentDisgnosticsForGridView_SP_Result)">
             <Parameter Name="v_ServiceId" Mode="In" Type="String" />
@@ -14846,19 +14846,19 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponents_1" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponents_1_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponents_SP" ReturnType="Collection(String)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsCulminados_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentsCulminados_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsForManagementReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentsForManagementReport_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsInfo_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentsInfo_SP_Result)">
-            <Parameter Name="v_ServiceComponentId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsReport_2_DiagnosticRepository_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentsReport_2_DiagnosticRepository_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
@@ -14873,32 +14873,32 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="v_ComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsReport_New312_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentsReport_New312_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsReport_NewLab_1_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentsReport_NewLab_1_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsReport_NewLab_2_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentsReport_NewLab_2_SP_Result)">
             <Parameter Name="pstrServiceId" Mode="In" Type="String" />
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsReportC_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentsReportC_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsReportForReportSolo_SP" ReturnType="Collection(String)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentsReportSC_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentsReportSC_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceComponentTotalDiagnostics_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceComponentTotalDiagnostics_SP_Result)">
-            <Parameter Name="v_DiagnosticDepositoryId" Mode="In" Type="String" />
+          <Parameter Name="v_DiagnosticDepositoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceData_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceData_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceDisgnosticsReports_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceDisgnosticsReports_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceForTramasPageAndFilteredAmbulatorio_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceForTramasPageAndFilteredAmbulatorio_SP_Result)">
             <Parameter Name="pdatBeginDate" Mode="In" Type="DateTime" />
@@ -14929,38 +14929,38 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="personId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceInformationHosp_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceInformationHosp_SP_Result)">
-            <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
+          <Parameter Name="v_HopitalizacionId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServicePersonData_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServicePersonData_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceRecommendationByDiagnosticRepositoryId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceRecommendationByDiagnosticRepositoryId_SP_Result)">
-            <Parameter Name="v_DiagnosticRepositoryId" Mode="In" Type="String" />
+          <Parameter Name="v_DiagnosticRepositoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceRecommendationByDiagnosticRepositoryIdReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceRecommendationByDiagnosticRepositoryIdReport_SP_Result)">
-            <Parameter Name="v_DiagnosticRepository" Mode="In" Type="String" />
+          <Parameter Name="v_DiagnosticRepository" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceRecommendationByServiceId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceRecommendationByServiceId_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceReport_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceRestrictionByDiagnosticRepositoryIdReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceRestrictionByDiagnosticRepositoryIdReport_SP_Result)">
-            <Parameter Name="v_DiagnosticRepository" Mode="In" Type="String" />
+          <Parameter Name="v_DiagnosticRepository" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceRestrictionsByDiagnosticRepositoryId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceRestrictionsByDiagnosticRepositoryId_SP_Result)">
-            <Parameter Name="v_DiagnosticRepositoryId" Mode="In" Type="String" />
+          <Parameter Name="v_DiagnosticRepositoryId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceRestrictionsForGridView_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceRestrictionsForGridView_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getServices" ReturnType="Collection(SigesoftDesarrollo_2Model.getServices_Result)">
             <Parameter Name="personId" Mode="In" Type="String" />
             <Parameter Name="ocupacionalesOrParticulares" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetServicesComponentArchivo_SP" ReturnType="Collection(String)">
-            <Parameter Name="serviceComponent" Mode="In" Type="String" />
+          <Parameter Name="serviceComponent" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServicesConsolidateForService_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServicesConsolidateForService_SP_Result)">
             <Parameter Name="v_ServiceId" Mode="In" Type="String" />
@@ -14975,7 +14975,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="EmpresaContrata" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServicesCovid19_SEG_VAL_SP" ReturnType="Collection(String)">
-            <Parameter Name="v_ServiceComponentId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServicesCovid19_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServicesCovid19_SP_Result)">
             <Parameter Name="FechaIicio" Mode="In" Type="DateTime" />
@@ -14998,7 +14998,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="EmpresaContrata" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServiceShort_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServiceShort_SP_Result)">
-            <Parameter Name="pstrServiceId" Mode="In" Type="String" />
+          <Parameter Name="pstrServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetServicesPagedAndFiltered_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetServicesPagedAndFiltered_SP_Result)">
             <Parameter Name="FechaIicio" Mode="In" Type="DateTime" />
@@ -15055,33 +15055,33 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
           <FunctionImport Name="getSolicitudesCulminadasForMonths" ReturnType="Collection(SigesoftDesarrollo_2Model.getSolicitudesCulminadasForMonths_Result)" />
           <FunctionImport Name="getSolicitudesParaAprobar" ReturnType="Collection(Int32)" />
           <FunctionImport Name="GetSubCategoryName_SP" ReturnType="Collection(String)">
-            <Parameter Name="componentId" Mode="In" Type="String" />
+          <Parameter Name="componentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetSystemParameterForCombo_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetSystemParameterForCombo_SP_Result)">
-            <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
+          <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetSystemParameterForComboForm_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetSystemParameterForComboForm_SP_Result)">
-            <Parameter Name="form" Mode="In" Type="String" />
+          <Parameter Name="form" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetSystemParameterForComboFormEso_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetSystemParameterForComboFormEso_SP_Result)" />
           <FunctionImport Name="GetSystemParametersPagedAndFilteredNew_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetSystemParametersPagedAndFilteredNew_SP_Result)">
-            <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
+          <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetSystemParametersPagedAndFilteredNew2_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetSystemParametersPagedAndFilteredNew2_SP_Result)">
-            <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
+          <Parameter Name="pintGroupId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="getSystemUser" ReturnType="Collection(SigesoftDesarrollo_2Model.getSystemUser_Result)">
-            <Parameter Name="userId" Mode="In" Type="String" />
+          <Parameter Name="userId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getSystemUserCorrelativo" ReturnType="Collection(Int32)" />
           <FunctionImport Name="GetSystemUserExternalPagedAndFiltered_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetSystemUserExternalPagedAndFiltered_SP_Result)">
-            <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
+          <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetTicketReport" ReturnType="Collection(SigesoftDesarrollo_2Model.GetTicketReport_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetTypeOfEEPPagedAndFiltered_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetTypeOfEEPPagedAndFiltered_SP_Result)">
-            <Parameter Name="pstrHistorytId" Mode="In" Type="String" />
+          <Parameter Name="pstrHistorytId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="getUsersRegister" ReturnType="Collection(Int32)" />
           <FunctionImport Name="GetValoresComponente_ObservadoAMC_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetValoresComponente_ObservadoAMC_SP_Result)">
@@ -15119,26 +15119,26 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="pstrComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetVerificarAptitud_SP" ReturnType="Collection(String)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetVerificarEscritura_SP" ReturnType="Collection(Int32)">
             <Parameter Name="v_ComponentId" Mode="In" Type="String" />
             <Parameter Name="p2" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetWorkerData_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetWorkerData_SP_Result)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="GetWorkstationDangersagedAndFiltered_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.GetWorkstationDangersagedAndFiltered_SP_Result)">
-            <Parameter Name="pstrHistorytId" Mode="In" Type="String" />
+          <Parameter Name="pstrHistorytId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="isExistUser" ReturnType="Collection(Int32)">
-            <Parameter Name="dni" Mode="In" Type="String" />
+          <Parameter Name="dni" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="isNullImagePerfil" ReturnType="Collection(Binary)">
-            <Parameter Name="personId" Mode="In" Type="String" />
+          <Parameter Name="personId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="isObservado" ReturnType="Collection(Int32)">
-            <Parameter Name="serviceId" Mode="In" Type="String" />
+          <Parameter Name="serviceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ListCalendarHorarioSambhs" ReturnType="Collection(SigesoftDesarrollo_2Model.ListCalendarHorarioSambhs_Result)">
             <Parameter Name="anio" Mode="In" Type="Int32" />
@@ -15152,16 +15152,16 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="dia" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="ListGetDiagnosticByServiceId1_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ListGetDiagnosticByServiceId1_SP_Result)">
-            <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
+          <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ListGetDiagnosticByServiceIdAndCategoryId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ListGetDiagnosticByServiceIdAndCategoryId_SP_Result)">
-            <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
+          <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ListGetRecommendationByServiceId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ListGetRecommendationByServiceId_SP_Result)">
-            <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
+          <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ListGetRestrictionByServiceId_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ListGetRestrictionByServiceId_SP_Result)">
-            <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
+          <Parameter Name="v_ServiciosIds" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ListMissingExamenesNames_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ListMissingExamenesNames_SP_Result)">
             <Parameter Name="v_ServiceId" Mode="In" Type="String" />
@@ -15191,10 +15191,10 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="empresa" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="LlenarComboProtocolo_pre_1_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboProtocolo_pre_1_SP_Result)">
-            <Parameter Name="v_empresa" Mode="In" Type="String" />
+          <Parameter Name="v_empresa" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="LlenarComboProtocolo_pre_2_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboProtocolo_pre_2_SP_Result)">
-            <Parameter Name="v_empresa" Mode="In" Type="String" />
+          <Parameter Name="v_empresa" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="LlenarComboProtocolo_Seguros_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboProtocolo_Seguros_SP_Result)">
             <Parameter Name="p1" Mode="In" Type="Int32" />
@@ -15208,16 +15208,16 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
           </FunctionImport>
           <FunctionImport Name="LlenarComboResidencia_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboResidencia_SP_Result)" />
           <FunctionImport Name="LlenarComboServicio_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboServicio_SP_Result)">
-            <Parameter Name="pServiceTypeId" Mode="In" Type="Int32" />
+          <Parameter Name="pServiceTypeId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="LlenarComboSystemParametro_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboSystemParametro_SP_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="LlenarComboTipoDocumento" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboTipoDocumento_Result)" />
           <FunctionImport Name="LlenarComboTipoSeguro_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboTipoSeguro_SP_Result)" />
           <FunctionImport Name="LlenarComboTipoServicio_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboTipoServicio_SP_Result)" />
           <FunctionImport Name="LlenarComboUsuarios_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarComboUsuarios_SP_Result)">
-            <Parameter Name="pstrProtocolId" Mode="In" Type="String" />
+          <Parameter Name="pstrProtocolId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="LlenarGrillaSigesoft">
             <Parameter Name="Dni" Mode="In" Type="String" />
@@ -15228,15 +15228,15 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="i_EsoTypeId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="LlenarPerson_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.LlenarPerson_SP_Result)">
-            <Parameter Name="Filtro" Mode="In" Type="String" />
+          <Parameter Name="Filtro" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ObtenerAreas_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerAreas_SP_Result)" />
           <FunctionImport Name="ObtenerComentariosCuidadosPreventivos_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerComentariosCuidadosPreventivos_SP_Result)">
-            <Parameter Name="PersonId" Mode="In" Type="String" />
+          <Parameter Name="PersonId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ObtenerContactoEmergencia_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerContactoEmergencia_SP_Result)" />
           <FunctionImport Name="ObtenerEsoAntecedentesPorGrupoId1__SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerEsoAntecedentesPorGrupoId1__SP_Result)">
-            <Parameter Name="GrupoId" Mode="In" Type="Int32" />
+          <Parameter Name="GrupoId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="ObtenerEsoAntecedentesPorGrupoId2__SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerEsoAntecedentesPorGrupoId2__SP_Result)">
             <Parameter Name="GrupoEtario" Mode="In" Type="Int32" />
@@ -15272,20 +15272,20 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="IdProductoDetalle" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ObtenerProducto" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerProducto_Result)">
-            <Parameter Name="IdProductoDetalle" Mode="In" Type="String" />
+          <Parameter Name="IdProductoDetalle" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ObtenerProvincia_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerProvincia_SP_Result)">
-            <Parameter Name="pintParentItemId" Mode="In" Type="String" />
+          <Parameter Name="pintParentItemId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ObtenerPuestos_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerPuestos_SP_Result)" />
           <FunctionImport Name="ObtenerTodasProvincia_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerTodasProvincia_SP_Result)">
-            <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
+          <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="ObtenerTodosDepartamentos_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerTodosDepartamentos_SP_Result)">
-            <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
+          <Parameter Name="pintNodeId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="ObtenerValores" ReturnType="Collection(SigesoftDesarrollo_2Model.ObtenerValores_Result)">
-            <Parameter Name="ServiceId" Mode="In" Type="String" />
+          <Parameter Name="ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="pagoEnLinea">
             <Parameter Name="json" Mode="In" Type="String" />
@@ -15403,7 +15403,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="ServicioId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="UpdateServiceComponent1_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.UpdateServiceComponent1_SP_Result)">
-            <Parameter Name="v_ServiceComponentId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="UpdateServiceComponent2_SP" ReturnType="Collection(String)">
             <Parameter Name="serviceId_" Mode="In" Type="String" />
@@ -15433,15 +15433,16 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
             <Parameter Name="idAdmin" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="ValoresComponente_ManagerReport_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ValoresComponente_ManagerReport_SP_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ValoresComponenteOdontograma1_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ValoresComponenteOdontograma1_SP_Result)">
             <Parameter Name="v_ServiceId" Mode="In" Type="String" />
             <Parameter Name="v_ComponentId" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ValoresComponentesServicio" ReturnType="Collection(SigesoftDesarrollo_2Model.ValoresComponentesServicio_Result)">
-            <Parameter Name="v_ServiceId" Mode="In" Type="String" />
+          <Parameter Name="v_ServiceId" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="ListadoHojaReclamoAll_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ListadoHojaReclamoAll_SP_Result)" />
         </EntityContainer>
         <ComplexType Name="accessUser_Result">
           <Property Type="String" Name="namePerson" Nullable="true" MaxLength="50" />
@@ -20175,6 +20176,32 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
           <Property Type="String" Name="v_ComponentId" Nullable="false" MaxLength="16" />
           <Property Type="String" Name="v_ServiceComponentId" Nullable="false" MaxLength="16" />
           <Property Type="String" Name="v_ComponentFieldsId" Nullable="true" MaxLength="16" />
+        </ComplexType>
+        <ComplexType Name="ListadoHojaReclamoAll_SP_Result">
+          <Property Type="String" Name="v_IdHojaReclamo" Nullable="false" MaxLength="16" />
+          <Property Type="Int32" Name="i_CorrelativoReclamo" Nullable="true" />
+          <Property Type="DateTime" Name="d_fechaR" Nullable="true" />
+          <Property Type="String" Name="v_IdPaciente" Nullable="true" MaxLength="16" />
+          <Property Type="String" Name="Paciente" Nullable="true" MaxLength="152" />
+          <Property Type="Boolean" Name="i_Producto" Nullable="true" />
+          <Property Type="Boolean" Name="i_Servicio" Nullable="true" />
+          <Property Type="String" Name="Prod_Serv" Nullable="false" MaxLength="8" />
+          <Property Type="String" Name="v_MontoReclamo" Nullable="true" />
+          <Property Type="String" Name="v_Descripcion" Nullable="true" />
+          <Property Type="String" Name="v_Pedido" Nullable="true" />
+          <Property Type="Binary" Name="b_FirmaConsumidor" Nullable="true" MaxLength="Max" />
+          <Property Type="DateTime" Name="d_FechaComunicacionRespuesta" Nullable="true" />
+          <Property Type="Binary" Name="b_FirmaProveedor" Nullable="true" MaxLength="Max" />
+          <Property Type="Int32" Name="i_IsDeleted" Nullable="true" />
+          <Property Type="Int32" Name="i_InsertUserId" Nullable="true" />
+          <Property Type="String" Name="UsuarioRegistro" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="d_InsertDate" Nullable="true" />
+          <Property Type="String" Name="UsuarioEdita" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="d_UpdateDate" Nullable="true" />
+          <Property Type="String" Name="v_ComentaryRegistros" Nullable="true" />
+          <Property Type="Boolean" Name="i_Queja" Nullable="true" />
+          <Property Type="Boolean" Name="i_Reclamo" Nullable="true" />
+          <Property Type="String" Name="Quej_Recl" Nullable="false" MaxLength="7" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -29943,6 +29970,36 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
                 <ScalarProperty Name="v_ComponentId" ColumnName="v_ComponentId" />
                 <ScalarProperty Name="v_ServiceComponentId" ColumnName="v_ServiceComponentId" />
                 <ScalarProperty Name="v_ComponentFieldsId" ColumnName="v_ComponentFieldsId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ListadoHojaReclamoAll_SP" FunctionName="SigesoftDesarrollo_2Model.Store.ListadoHojaReclamoAll_SP">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SigesoftDesarrollo_2Model.ListadoHojaReclamoAll_SP_Result">
+                <ScalarProperty Name="v_IdHojaReclamo" ColumnName="v_IdHojaReclamo" />
+                <ScalarProperty Name="i_CorrelativoReclamo" ColumnName="i_CorrelativoReclamo" />
+                <ScalarProperty Name="d_fechaR" ColumnName="d_fechaR" />
+                <ScalarProperty Name="v_IdPaciente" ColumnName="v_IdPaciente" />
+                <ScalarProperty Name="Paciente" ColumnName="Paciente" />
+                <ScalarProperty Name="i_Producto" ColumnName="i_Producto" />
+                <ScalarProperty Name="i_Servicio" ColumnName="i_Servicio" />
+                <ScalarProperty Name="Prod_Serv" ColumnName="Prod_Serv" />
+                <ScalarProperty Name="v_MontoReclamo" ColumnName="v_MontoReclamo" />
+                <ScalarProperty Name="v_Descripcion" ColumnName="v_Descripcion" />
+                <ScalarProperty Name="v_Pedido" ColumnName="v_Pedido" />
+                <ScalarProperty Name="b_FirmaConsumidor" ColumnName="b_FirmaConsumidor" />
+                <ScalarProperty Name="d_FechaComunicacionRespuesta" ColumnName="d_FechaComunicacionRespuesta" />
+                <ScalarProperty Name="b_FirmaProveedor" ColumnName="b_FirmaProveedor" />
+                <ScalarProperty Name="i_IsDeleted" ColumnName="i_IsDeleted" />
+                <ScalarProperty Name="i_InsertUserId" ColumnName="i_InsertUserId" />
+                <ScalarProperty Name="UsuarioRegistro" ColumnName="UsuarioRegistro" />
+                <ScalarProperty Name="d_InsertDate" ColumnName="d_InsertDate" />
+                <ScalarProperty Name="UsuarioEdita" ColumnName="UsuarioEdita" />
+                <ScalarProperty Name="d_UpdateDate" ColumnName="d_UpdateDate" />
+                <ScalarProperty Name="v_ComentaryRegistros" ColumnName="v_ComentaryRegistros" />
+                <ScalarProperty Name="i_Queja" ColumnName="i_Queja" />
+                <ScalarProperty Name="i_Reclamo" ColumnName="i_Reclamo" />
+                <ScalarProperty Name="Quej_Recl" ColumnName="Quej_Recl" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

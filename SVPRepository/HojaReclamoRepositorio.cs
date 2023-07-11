@@ -1,6 +1,7 @@
 ﻿using Interfaces;
 using Microsoft.Win32;
 using SVPDomain;
+using SVPDomain.ClasesNew;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -51,18 +52,71 @@ namespace SVPRepository
             
         }
 
-        public List<HojaReclamo> AllHojaReclamo()
+        public List<HojaReclamoList> AllHojaReclamo()
         {
-            var result = from p in entidad.HojaReclamo select p;
+            var result = from p in entidad.ListadoHojaReclamoAll_SP()
+                         select new HojaReclamoList
+                         {
+                             v_IdHojaReclamo = p.v_IdHojaReclamo,
+                             i_CorrelativoReclamo = p.i_CorrelativoReclamo,
+                             d_fechaR = p.d_fechaR.Value,
+                             v_IdPaciente = p.v_IdPaciente,
+                             Paciente = p.Paciente,
+                             //i_Producto = p.i_Producto.Value,
+                             //i_Servicio = p.i_Servicio.Value,
+                             Prod_Serv = p.Prod_Serv,
+                             v_MontoReclamo = p.v_MontoReclamo,
+                             v_Descripcion = p.v_Descripcion,
+                             Quej_Recl = p.Quej_Recl,
+                             v_Pedido = p.v_Pedido,
+                             b_FirmaConsumidor = p.b_FirmaConsumidor,
+                             d_FechaComunicacionRespuesta = p.d_FechaComunicacionRespuesta.Value,
+                             b_FirmaProveedor = p.b_FirmaProveedor,
+                             i_IsDeleted = p.i_IsDeleted.Value,
+                             i_InsertUserId = p.i_InsertUserId.Value,
+                             UsuarioRegistro = p.UsuarioRegistro,
+                             d_InsertDate = p.d_InsertDate.Value,
+                             UsuarioEdita = p.UsuarioEdita,
+                             d_UpdateDate = p.d_UpdateDate.Value,
+                             v_ComentaryRegistros = p.v_ComentaryRegistros,
+
+                         };
             return result.ToList();
         }
 
-        public List<HojaReclamo> ByQueryAll(string query, DateTime? fecha1, DateTime? fecha2)
+        public List<HojaReclamoList> ByQueryAll(string query, DateTime? fecha1, DateTime? fecha2)
         {
-            var dbQuery = (from p in entidad.HojaReclamo.Include("person") select p);
+            var dbQuery = from p in entidad.ListadoHojaReclamoAll_SP()
+                         select new HojaReclamoList
+                         {
+                             v_IdHojaReclamo = p.v_IdHojaReclamo,
+                             i_CorrelativoReclamo = p.i_CorrelativoReclamo,
+                             d_fechaR = p.d_fechaR.Value,
+                             v_IdPaciente = p.v_IdPaciente,
+                             Paciente = p.Paciente,
+                             i_Producto = p.i_Producto.Value,
+                             i_Servicio = p.i_Servicio.Value,
+                             Prod_Serv = p.Prod_Serv,
+                             v_MontoReclamo = p.v_MontoReclamo,
+                             v_Descripcion = p.v_Descripcion,
+                             i_Queja = p.i_Queja.Value,
+                             i_Reclamo = p.i_Reclamo.Value,
+                             Quej_Recl = p.Quej_Recl,
+                             v_Pedido = p.v_Pedido,
+                             b_FirmaConsumidor = p.b_FirmaConsumidor,
+                             //d_FechaComunicacionRespuesta = p.d_FechaComunicacionRespuesta.Value,
+                             b_FirmaProveedor = p.b_FirmaProveedor,
+                             i_IsDeleted = p.i_IsDeleted.Value,
+                             i_InsertUserId = p.i_InsertUserId.Value,
+                             UsuarioRegistro = p.UsuarioRegistro,
+                             d_InsertDate = p.d_InsertDate.Value,
+                             UsuarioEdita = p.UsuarioEdita,
+                             //d_UpdateDate = p.d_UpdateDate.Value,
+                             v_ComentaryRegistros = p.v_ComentaryRegistros,
+                         };
 
             if (!String.IsNullOrEmpty(query))
-                dbQuery = dbQuery.Where(o => o.person.v_FirstName.Contains(query) || o.person.v_FirstLastName.Contains(query) || o.person.v_SecondLastName.Contains(query) || o.person.v_DocNumber.Contains(query));
+                dbQuery = dbQuery.Where(o => o.Paciente.Contains(query) || o.DNI.Contains(query));
 
             if (fecha1 != null && fecha2 != null)
                 dbQuery = dbQuery.Where(o => o.d_fechaR >= fecha1 && o.d_fechaR <= fecha2);

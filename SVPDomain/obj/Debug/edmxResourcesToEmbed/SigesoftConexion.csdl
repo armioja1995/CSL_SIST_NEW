@@ -7816,6 +7816,7 @@
     <FunctionImport Name="ValoresComponentesServicio" ReturnType="Collection(SigesoftDesarrollo_2Model.ValoresComponentesServicio_Result)">
       <Parameter Name="v_ServiceId" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="ListadoHojaReclamoAll_SP" ReturnType="Collection(SigesoftDesarrollo_2Model.ListadoHojaReclamoAll_SP_Result)" />
   </EntityContainer>
   <ComplexType Name="accessUser_Result">
     <Property Type="String" Name="namePerson" Nullable="true" MaxLength="50" />
@@ -12549,5 +12550,31 @@
     <Property Type="String" Name="v_ComponentId" Nullable="false" MaxLength="16" />
     <Property Type="String" Name="v_ServiceComponentId" Nullable="false" MaxLength="16" />
     <Property Type="String" Name="v_ComponentFieldsId" Nullable="true" MaxLength="16" />
+  </ComplexType>
+  <ComplexType Name="ListadoHojaReclamoAll_SP_Result">
+    <Property Type="String" Name="v_IdHojaReclamo" Nullable="false" MaxLength="16" />
+    <Property Type="Int32" Name="i_CorrelativoReclamo" Nullable="true" />
+    <Property Type="DateTime" Name="d_fechaR" Nullable="true" />
+    <Property Type="String" Name="v_IdPaciente" Nullable="true" MaxLength="16" />
+    <Property Type="String" Name="Paciente" Nullable="true" MaxLength="152" />
+    <Property Type="Boolean" Name="i_Producto" Nullable="true" />
+    <Property Type="Boolean" Name="i_Servicio" Nullable="true" />
+    <Property Type="String" Name="Prod_Serv" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="v_MontoReclamo" Nullable="true" />
+    <Property Type="String" Name="v_Descripcion" Nullable="true" />
+    <Property Type="String" Name="v_Pedido" Nullable="true" />
+    <Property Type="Binary" Name="b_FirmaConsumidor" Nullable="true" MaxLength="Max" />
+    <Property Type="DateTime" Name="d_FechaComunicacionRespuesta" Nullable="true" />
+    <Property Type="Binary" Name="b_FirmaProveedor" Nullable="true" MaxLength="Max" />
+    <Property Type="Int32" Name="i_IsDeleted" Nullable="true" />
+    <Property Type="Int32" Name="i_InsertUserId" Nullable="true" />
+    <Property Type="String" Name="UsuarioRegistro" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="d_InsertDate" Nullable="true" />
+    <Property Type="String" Name="UsuarioEdita" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="d_UpdateDate" Nullable="true" />
+    <Property Type="String" Name="v_ComentaryRegistros" Nullable="true" />
+    <Property Type="Boolean" Name="i_Queja" Nullable="true" />
+    <Property Type="Boolean" Name="i_Reclamo" Nullable="true" />
+    <Property Type="String" Name="Quej_Recl" Nullable="false" MaxLength="7" />
   </ComplexType>
 </Schema>

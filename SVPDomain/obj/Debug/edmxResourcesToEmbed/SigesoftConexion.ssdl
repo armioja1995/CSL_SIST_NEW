@@ -6532,6 +6532,7 @@ advertencia 6002: La tabla o vista 'SigesoftDesarrollo_2.dbo.holidays' no tiene 
   <Function Name="isObservado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="serviceId" Type="varchar" Mode="In" />
   </Function>
+  <Function Name="ListadoHojaReclamoAll_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="ListCalendarHorarioSambhs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="anio" Type="int" Mode="In" />
     <Parameter Name="mes" Type="int" Mode="In" />

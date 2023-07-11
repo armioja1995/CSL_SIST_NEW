@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="2864a4e4da6f4e3dbc8d04c942a00c08" Name="Diagram1">
+      <Diagram DiagramId="2864a4e4da6f4e3dbc8d04c942a00c08" Name="Diagram1" ZoomLevel="93">
         <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.additionalexam" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.adolescente" Width="1.5" PointX="3" PointY="46.625" IsExpanded="true" />
         <EntityTypeShape EntityType="SigesoftDesarrollo_2Model.adulto" Width="1.5" PointX="3" PointY="52.25" IsExpanded="true" />

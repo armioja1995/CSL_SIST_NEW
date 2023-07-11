@@ -1,4 +1,4 @@
-﻿@model PagedList.IPagedList<SVPDomain.HojaReclamo>
+﻿@model PagedList.IPagedList<SVPDomain.ClasesNew.HojaReclamoList>
 @using PagedList.Mvc;
 
 @{
@@ -97,7 +97,7 @@
                 <th style="color:white">Cliente</th>
                 <th style="color:white">Fecha Reclamo</th>
                 <th style="color:white">Prod / Serv</th>
-                <th style="color:white">Monto</th>
+                <th style="color:white">Monto S/.</th>
                 <th style="color:white">Desc</th>
                 <th style="color:white">Quej/Rec</th>
                 <th style="color:white">Acciones</th>
@@ -107,12 +107,12 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@item.v_IdPaciente</td>
-                    <td>@item.d_fechaR.Value.ToShortDateString()</td>
-                    <td>@item.i_Producto == 1 ?"Producto":"Servicio"</td>
-                    <td>@item.v_MontoReclamo.ToString()</td>
+                    <td>@item.Paciente</td>
+                    <td>@item.d_fechaR</td>
+                    <td>@item.Prod_Serv</td>
+                    <td>@item.v_MontoReclamo</td>
                     <td>@item.v_Descripcion</td>
-                    <td>@item.i_Queja == 1 ?"Queja":"Reclamo"</td>
+                    <td>@item.Quej_Recl</td>
                     @*<td>
                             @if (!string.IsNullOrEmpty(item.Documento))
                             {

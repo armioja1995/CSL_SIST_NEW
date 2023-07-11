@@ -145,6 +145,7 @@
       <DependentUpon>SigesoftConexion.tt</DependentUpon>
     </Compile>
     <Compile Include="ClasesNew\Enums.cs" />
+    <Compile Include="ClasesNew\HojaReclamoList.cs" />
     <Compile Include="CodigoEmpresa.cs">
       <DependentUpon>SigesoftConexion.tt</DependentUpon>
     </Compile>
@@ -1019,6 +1020,9 @@
       <DependentUpon>SigesoftConexion.tt</DependentUpon>
     </Compile>
     <Compile Include="liquidacion.cs">
+      <DependentUpon>SigesoftConexion.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoHojaReclamoAll_SP_Result.cs">
       <DependentUpon>SigesoftConexion.tt</DependentUpon>
     </Compile>
     <Compile Include="ListCalendarHorarioSambhs_Result.cs">

@@ -5243,5 +5243,10 @@ namespace SVPDomain
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ValoresComponentesServicio_Result>("ValoresComponentesServicio", v_ServiceIdParameter);
         }
+    
+        public virtual ObjectResult<ListadoHojaReclamoAll_SP_Result> ListadoHojaReclamoAll_SP()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ListadoHojaReclamoAll_SP_Result>("ListadoHojaReclamoAll_SP");
+        }
     }
 }
